@@ -1,0 +1,28 @@
+---
+title: "Lecture 15: A Brief Introduction to Learning-Based Robot Control"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Understand why learning is used in robot control.
+- Compare imitation learning and reinforcement learning.
+- Identify practical barriers for real-world deployment.
+
+## Learning-based control paradigms
+
+1. Behavior cloning from demonstrations
+2. Reinforcement learning from reward-driven interaction
+3. Hybrid model-based plus learned residual approaches
+
+## Deployment considerations
+
+- Data quality and coverage
+- Safety constraints and fallback policies
+- Sim-to-real transfer and domain randomization
+
+## Summary
+
+- Learning can reduce manual controller engineering.
+- Robustness, safety, and sample efficiency remain core challenges.

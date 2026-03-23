@@ -1,0 +1,27 @@
+---
+title: "Lecture 10 Notes: Control I - Computed Torque Control"
+---
+
+## Lecture slide
+
+- [Lecture 10 slides](../slides/10-control-1-pid-basics.qmd)
+
+## Key ideas
+
+- Computed torque uses robot dynamics for model-based tracking control.
+- Feedback linearization can simplify nonlinear joint dynamics.
+- Practical robustness still depends on parameter uncertainty and disturbances.
+
+## Control law sketch
+
+\[
+\tau = M(q)\big(\ddot{q}_{des} + K_d \dot{e} + K_p e\big) + C(q,\dot{q})\dot{q} + g(q)
+\]
+
+This form combines model-based feedforward and error feedback for trajectory tracking.
+
+## Review questions
+
+1. Why does computed torque rely on an accurate dynamics model?
+2. What happens when \(M, C, g\) are estimated poorly?
+3. How can robust or adaptive terms improve stability in practice?

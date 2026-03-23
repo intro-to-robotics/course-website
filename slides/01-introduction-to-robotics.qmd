@@ -1,0 +1,32 @@
+---
+title: "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Understand the scope of modern robotics.
+- Connect modeling, actuation, perception, planning, and control.
+- See how all course modules fit into one robotics pipeline.
+
+## What is an autonomous robot?
+
+A practical robot system includes:
+
+- Mechanical body and actuation
+- Sensing and state estimation
+- Decision making (planning and control)
+- Software/hardware integration in the loop
+
+## Course roadmap
+
+1. Modeling and simulation foundations
+2. Actuation and low-level dynamics
+3. Planning and control
+4. Perception and learning-based methods
+
+## Summary
+
+- Robotics is a systems discipline.
+- Each lecture builds one layer of a complete autonomy stack.

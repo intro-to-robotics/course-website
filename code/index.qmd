@@ -1,0 +1,16 @@
+---
+title: "Visualization Code"
+---
+
+Visualization and simulation code is organized by lecture, with one directory per lecture.
+
+## Lecture code directories
+
+- [Lecture 01 directory](lecture-01-introduction/README.md)
+- [Lecture 01 workspace plot script](lecture-01-introduction/workspace_plot.py)
+
+## Suggested convention
+
+- `code/lecture-XX-topic/` for lecture-specific materials
+- `code/shared/` for reusable utilities
+- Include a short `README.md` in each directory

@@ -1,0 +1,50 @@
+---
+title: "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems"
+---
+
+## Lecture slide
+
+- [Lecture 01 slides](../slides/01-introduction-to-robotics.qmd)
+
+## 1. Why robotics?
+
+Robotics integrates mechanics, electronics, and computation to build embodied intelligent systems.
+
+Key motivations:
+
+- Safer operation in hazardous environments
+- Improved precision and repeatability
+- Scalable automation in logistics, healthcare, and manufacturing
+
+## 2. Canonical robot architecture
+
+A practical robot often includes:
+
+- **Plant**: links, joints, motors, and transmission
+- **Sensors**: encoders, IMU, camera, LiDAR, force sensors
+- **Compute stack**: estimation, planning, and control modules
+- **Communication layer**: middleware for real-time data flow
+
+## 3. Mathematical foundations (preview)
+
+For a manipulator with joint configuration \(q\):
+
+- Forward kinematics: \(x = f(q)\)
+- Differential kinematics: \(\dot{x} = J(q)\dot{q}\)
+
+These models connect commanded joint motion to end-effector behavior.
+
+## 4. Visualization workflow
+
+Each lecture keeps code in a dedicated subdirectory under `code/`.
+
+For lecture 01:
+
+- [Code directory README](../code/lecture-01-introduction/README.md)
+- [Workspace plotting script](../code/lecture-01-introduction/workspace_plot.py)
+
+## 5. Reading checklist
+
+- Define robotics in one sentence.
+- Explain the role of each block in the robot pipeline.
+- State the difference between \(f(q)\) and \(J(q)\dot{q}\).

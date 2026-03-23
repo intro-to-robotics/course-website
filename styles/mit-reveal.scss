@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+$body-bg: #ffffff;
+$body-color: #121212;
+$link-color: #a31f34;
+$presentation-heading-color: #750014;
+$selection-bg: #a31f34;
+$selection-color: #ffffff;
+$code-block-bg: #f8f9fa;
+
+/*-- scss:rules --*/
+.reveal .progress span {
+  background: #a31f34;
+}
+
+.reveal .slide-number {
+  color: #a31f34;
+}
+
+.reveal blockquote {
+  border-left: 4px solid #a31f34;
+  background: #fff4f6;
+  padding: 0.6em 1em;
+}
+
+.reveal .title-slide {
+  background: linear-gradient(145deg, #a31f34 0%, #750014 100%);
+  color: #ffffff;
+}
+
+.reveal .title-slide h1,
+.reveal .title-slide h2,
+.reveal .title-slide h3,
+.reveal .title-slide p {
+  color: #ffffff;
+}
+
+.reveal .footer a {
+  background: #a31f34;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 0.2em 0.9em;
+  text-decoration: none;
+}
+
+.reveal .footer a:hover {
+  background: #750014;
+}

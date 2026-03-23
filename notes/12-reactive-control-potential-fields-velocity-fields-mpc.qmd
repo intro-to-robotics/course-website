@@ -1,0 +1,27 @@
+---
+title: "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control"
+---
+
+## Lecture slide
+
+- [Lecture 12 slides](../slides/12-reactive-control.qmd)
+
+## Key ideas
+
+- Reactive control uses local information for fast online responses.
+- Potential and velocity fields offer interpretable geometric behavior.
+- MPC handles constraints explicitly by solving repeated finite-horizon optimization.
+
+## Typical MPC objective
+
+\[
+\min_{u_{0:H-1}} \sum_{k=0}^{H} \|x_k - x_k^{ref}\|_Q^2 + \sum_{k=0}^{H-1}\|u_k\|_R^2
+\]
+
+subject to system dynamics and safety constraints.
+
+## Review questions
+
+1. What failure modes appear in naive potential fields?
+2. Why is MPC computationally heavier than PID?
+3. Which tasks benefit most from constraint-aware control?

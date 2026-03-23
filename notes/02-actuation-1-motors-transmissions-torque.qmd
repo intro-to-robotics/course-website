@@ -1,0 +1,25 @@
+---
+title: "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation"
+---
+
+## Lecture slide
+
+- [Lecture 02 slides](../slides/13-actuation-1-motors-transmissions-torque.qmd)
+
+## Key ideas
+
+- Actuators convert electrical power into controllable mechanical motion.
+- Transmission choices trade output speed, torque, and backdrivability.
+- Continuous torque and thermal limits often determine usable performance.
+
+## Core equations
+
+- Motor torque: \(\tau_m = K_t i\)
+- Back EMF: \(e = K_e \omega_m\)
+- With gear ratio \(N\): \(\tau_{out} \approx \eta N \tau_m\), \(\omega_{out} = \omega_m / N\)
+
+## Review questions
+
+1. Why does a higher gear ratio increase output torque but reduce speed?
+2. How do efficiency losses change actuator sizing decisions?
+3. Why is thermal behavior critical for repeated robotic tasks?

@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - slides/*.qmd
+    - notes/*.qmd
+    - code/*.qmd
+  resources:
+    - code/**/*.py
+    - code/**/*.ipynb
+    - code/**/*.md
+    - code/**/*.txt
+    - code/**/*.csv
+    - code/**/*.json
+    - code/**/*.png
+    - code/**/*.gif
+
+website:
+  title: "Introduction to Robotics"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: slides/index.qmd
+        text: Lecture Slides
+      - href: notes/index.qmd
+        text: Lecture Notes
+      - href: code/index.qmd
+        text: Visualization Code
+  page-footer:
+    left: "Introduction to Robotics"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light:
+        - cosmo
+        - styles/mit-website.scss
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
+    code-copy: true
+    anchor-sections: true
+
+execute:
+  freeze: auto

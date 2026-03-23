@@ -1,0 +1,35 @@
+---
+title: "Lecture 14: Perception II - Camera Modeling and Calibration"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Understand camera geometry for robotics.
+- Distinguish intrinsic and extrinsic parameters.
+- Perform and validate camera calibration.
+
+## Camera projection model
+
+\[
+\begin{bmatrix}
+u \\ v \\ 1
+\end{bmatrix}
+\sim
+K [R \mid t]
+\begin{bmatrix}
+X \\ Y \\ Z \\ 1
+\end{bmatrix}
+\]
+
+## Calibration workflow
+
+1. Collect target images from diverse viewpoints
+2. Solve for \(K, R, t\) and distortion terms
+3. Validate via reprojection error
+
+## Summary
+
+- Calibration is foundational for 3D perception.
+- Better calibration yields more reliable downstream control.

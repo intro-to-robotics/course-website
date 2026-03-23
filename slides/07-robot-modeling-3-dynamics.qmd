@@ -1,0 +1,32 @@
+---
+title: "Lecture 05: Robot Modeling IV - Dynamics of Open Chains"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Derive open-chain manipulator dynamics.
+- Interpret inertia, Coriolis, and gravity terms.
+- Connect dynamic models to simulation and control.
+
+## Standard equation of motion
+
+\[
+M(q)\ddot{q} + C(q,\dot{q})\dot{q} + g(q) = \tau
+\]
+
+- \(M(q)\): inertia coupling
+- \(C(q,\dot{q})\dot{q}\): velocity-dependent effects
+- \(g(q)\): gravitational load
+
+## Why dynamics matter
+
+- Inverse dynamics for feedforward control
+- Better simulation fidelity
+- Safer actuator sizing
+
+## Summary
+
+- Dynamics tells us how torque becomes motion.
+- Accurate models improve tracking and robustness.

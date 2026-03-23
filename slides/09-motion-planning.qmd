@@ -1,0 +1,28 @@
+---
+title: "Lecture 09: Planning - Trajectory Generation and Motion Planning"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Formulate motion planning in configuration space.
+- Compare search-based and sampling-based methods.
+- Distinguish path planning from trajectory generation.
+
+## Planning workflow
+
+1. Build geometry and constraints
+2. Find feasible path in \(C\)-space
+3. Time-parameterize into executable trajectory
+
+## Common methods
+
+- Graph search (A*, Dijkstra variants)
+- Sampling planners (PRM, RRT family)
+- Post-processing (shortcutting, smoothing)
+
+## Summary
+
+- Planning bridges goals and physical execution.
+- Representation and constraints determine planner behavior.

@@ -1,0 +1,28 @@
+---
+title: "Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Model basic actuator dynamics.
+- Understand cascaded servo control loops.
+- Evaluate delay, saturation, and bandwidth limits.
+
+## Typical low-level architecture
+
+1. Current loop (fast inner loop)
+2. Velocity loop
+3. Position loop (outer loop)
+
+## Practical control issues
+
+- Saturation and anti-windup
+- Quantization and sensor noise
+- Sample period and communication delay
+
+## Summary
+
+- Low-level servo quality shapes high-level task performance.
+- Stable cascaded tuning is essential for reliable robots.

@@ -1,0 +1,31 @@
+---
+title: "Lecture 03: Robot Modeling II - Forward Kinematics"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Map joint variables to end-effector pose.
+- Build serial-chain transforms from link models.
+- Interpret robot workspace from kinematic structure.
+
+## Forward kinematics
+
+\[
+x = f(q), \quad
+T_{0e}(q) = \prod_{i=1}^{n} T_{i-1,i}(q_i)
+\]
+
+- Input: joint configuration \(q\)
+- Output: task-space pose \(x\)
+
+## Practical notes
+
+- Link dimensions and joint offsets must be calibrated.
+- Kinematic errors directly impact planning and control quality.
+
+## Summary
+
+- Forward kinematics is the first step toward motion generation.
+- It provides the geometry required for inverse and differential methods.

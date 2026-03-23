@@ -1,0 +1,31 @@
+---
+title: "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Explain how electric motors generate torque.
+- Understand gear/transmission trade-offs.
+- Connect actuator sizing to robot task demands.
+
+## Core actuator relations
+
+\[
+\tau_m = K_t i, \quad e = K_e \omega_m
+\]
+
+- Torque constant \(K_t\) links current to torque.
+- Back-EMF limits high-speed operation.
+
+## Transmission effects
+
+- Higher gear ratio increases output torque.
+- Efficiency and backlash impact control quality.
+- Thermal constraints bound continuous performance.
+
+## Summary
+
+- Actuation sets physical limits of robot behavior.
+- Electrical, mechanical, and thermal design must be co-optimized.

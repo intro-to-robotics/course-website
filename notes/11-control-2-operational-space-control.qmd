@@ -1,0 +1,25 @@
+---
+title: "Lecture 11 Notes: Control II - Operational-Space Control"
+---
+
+## Lecture slide
+
+- [Lecture 11 slides](../slides/11-control-2-operational-space-control.qmd)
+
+## Key ideas
+
+- Operational-space control directly regulates end-effector motion/force.
+- Jacobians map between joint space and task space.
+- Redundant robots can execute secondary objectives in null space.
+
+## Core relation
+
+\[
+\dot{x} = J(q)\dot{q}, \quad \tau = J^T F + N(q)\tau_{null}
+\]
+
+## Review questions
+
+1. Why is task-space control useful for manipulation tasks?
+2. What is null-space motion and when is it beneficial?
+3. How do joint limits change operational-space design?

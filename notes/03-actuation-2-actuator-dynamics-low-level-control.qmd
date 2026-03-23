@@ -1,0 +1,28 @@
+---
+title: "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control"
+---
+
+## Lecture slide
+
+- [Lecture 03 slides](../slides/14-actuation-2-actuator-dynamics-low-level-control.qmd)
+
+## Key ideas
+
+- Low-level control is usually implemented as cascaded current, velocity, and position loops.
+- Real actuators have delay, saturation, friction, and finite sampling effects.
+- Stability margins depend on both plant dynamics and controller timing.
+
+## Typical model
+
+A simplified actuator model can be written as:
+\[
+J \ddot{q} + b \dot{q} = \tau - \tau_{load}
+\]
+
+This model helps explain why loop bandwidth and damping matter in servo performance.
+
+## Review questions
+
+1. Why are cascaded loops used in motor drives?
+2. How does sampling period affect closed-loop behavior?
+3. What is the practical impact of torque saturation?

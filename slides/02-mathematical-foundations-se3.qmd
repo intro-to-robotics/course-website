@@ -1,0 +1,33 @@
+---
+title: "Lecture 02: Robot Modeling I - Rigid Body Motions"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Describe rigid-body motion in 2D and 3D.
+- Use homogeneous transforms for frame-to-frame mapping.
+- Understand the role of SE(3) in robotics.
+
+## Coordinate frames and transforms
+
+- A frame defines position and orientation.
+- A transform maps vectors from one frame to another.
+- Composition order matters in chained transforms.
+
+## Core representation
+
+\[
+T =
+\begin{bmatrix}
+R & p \\
+0 & 1
+\end{bmatrix},
+\quad R \in SO(3), \; T \in SE(3)
+\]
+
+## Summary
+
+- Rigid-body transforms are the geometric language of robotics.
+- SE(3) is the foundation for kinematics, perception, and control.

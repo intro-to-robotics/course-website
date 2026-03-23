@@ -1,0 +1,25 @@
+---
+title: "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics"
+---
+
+## Lecture slide
+
+- [Lecture 08 slides](../slides/08-robot-simulation.qmd)
+
+## Key ideas
+
+- Simulation enables fast prototyping and reproducible testing.
+- Physics engines approximate contact, friction, and constraints numerically.
+- Stable simulation requires consistent integration step and model parameters.
+
+## Practical checklist
+
+1. Validate inertial and contact parameters.
+2. Use fixed time steps for controller benchmarking.
+3. Compare simulated trajectories against hardware logs.
+
+## Review questions
+
+1. Why do contact-rich tasks diverge more in sim-to-real transfer?
+2. How does step size affect stability and runtime?
+3. What metrics best indicate simulation fidelity for your task?

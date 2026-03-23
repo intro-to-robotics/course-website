@@ -1,0 +1,31 @@
+---
+title: "Lecture 11: Control II - Operational-Space Control"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Control motion directly in task space.
+- Use Jacobian mappings between force and torque.
+- Handle redundancy with null-space objectives.
+
+## Task-space relations
+
+\[
+\dot{x} = J(q)\dot{q}, \quad \tau = J(q)^T F
+\]
+
+- End-effector objective is expressed in Cartesian space.
+- Joint torques are generated through Jacobian transpose mapping.
+
+## Redundancy handling
+
+- Primary task: end-effector tracking
+- Secondary task: posture/joint-limit avoidance
+- Null-space projection preserves priority
+
+## Summary
+
+- Operational-space control aligns control with task goals.
+- Redundancy can be exploited for safer, smoother behavior.

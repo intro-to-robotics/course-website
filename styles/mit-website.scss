@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+$mit-red: #a31f34;
+$mit-dark-red: #750014;
+$mit-light-gray: #f3f3f3;
+$mit-mid-gray: #8a8b8c;
+
+$link-color: $mit-red;
+$navbar-bg: $mit-red;
+$navbar-fg: #ffffff;
+$navbar-hl: #ffe3e8;
+$body-color: #1f2328;
+
+/*-- scss:rules --*/
+.navbar {
+  border-bottom: 3px solid $mit-dark-red;
+}
+
+.navbar .navbar-title,
+.navbar .nav-link {
+  font-weight: 600;
+}
+
+.quarto-title-banner {
+  background: linear-gradient(145deg, $mit-red 0%, $mit-dark-red 100%);
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $mit-dark-red;
+}
+
+a {
+  text-decoration-thickness: 1.5px;
+}
+
+code {
+  color: $mit-dark-red;
+}
+
+pre code {
+  color: inherit;
+}
+
+.callout.callout-style-default > .callout-header {
+  background: rgba(163, 31, 52, 0.08);
+  border-bottom: 1px solid rgba(163, 31, 52, 0.15);
+}
+
+.page-footer {
+  border-top: 1px solid $mit-light-gray;
+  color: $mit-mid-gray;
+}

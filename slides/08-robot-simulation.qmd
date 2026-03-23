@@ -1,0 +1,29 @@
+---
+title: "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Understand the simulation stack for robotics.
+- Compare common physics engines and assumptions.
+- Analyze contact modeling and numerical stability.
+
+## Simulation pipeline
+
+1. Scene and robot model definition
+2. Physics integration and contact solve
+3. Sensor/actuator loop emulation
+4. Logging and evaluation
+
+## Contact dynamics considerations
+
+- Time step and solver iterations affect stability.
+- Friction/contact parameters strongly affect behavior.
+- Sim-to-real mismatch must be expected and managed.
+
+## Summary
+
+- Simulation accelerates iteration before hardware tests.
+- Contact fidelity is critical for manipulation tasks.

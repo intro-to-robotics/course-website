@@ -1,0 +1,28 @@
+---
+title: "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation"
+---
+
+## Lecture slide
+
+- [Lecture 13 slides](../slides/03-perception-1-sensors-noise-state-estimation.qmd)
+
+## Key ideas
+
+- Sensors provide indirect, noisy measurements of robot/environment state.
+- Estimation combines models and measurements to infer latent state.
+- Uncertainty tracking is essential for robust decisions.
+
+## Estimation view
+
+\[
+x_k = f(x_{k-1}, u_{k-1}) + w_k,\quad
+z_k = h(x_k) + v_k
+\]
+
+where \(w_k\) and \(v_k\) represent process and measurement noise.
+
+## Review questions
+
+1. Why is sensor fusion often better than a single sensor?
+2. How does measurement noise propagate to state uncertainty?
+3. What assumptions are needed for Kalman-style filtering?

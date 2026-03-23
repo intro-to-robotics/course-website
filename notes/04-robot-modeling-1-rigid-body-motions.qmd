@@ -1,0 +1,29 @@
+---
+title: "Lecture 04 Notes: Robot Modeling I - Rigid Body Motions"
+---
+
+## Lecture slide
+
+- [Lecture 04 slides](../slides/02-mathematical-foundations-se3.qmd)
+
+## Key ideas
+
+- Robot geometry is described using coordinate frames and rigid transforms.
+- Homogeneous transforms unify rotation and translation into one matrix form.
+- Composition order matters because matrix multiplication is not commutative.
+
+## Core representation
+
+\[
+T =
+\begin{bmatrix}
+R & p \\
+0 & 1
+\end{bmatrix}, \quad R \in SO(3), \; T \in SE(3)
+\]
+
+## Review questions
+
+1. Why do we use homogeneous coordinates in robotics?
+2. What is the geometric meaning of \(T_{ab} T_{bc}\)?
+3. How do you compute \(T^{-1}\) efficiently from \(R\) and \(p\)?

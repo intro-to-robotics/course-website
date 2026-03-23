@@ -1,0 +1,32 @@
+---
+title: "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Compare sensing modalities used in robotics.
+- Model process/measurement uncertainty.
+- Understand the structure of state-estimation pipelines.
+
+## Estimation model
+
+\[
+x_k = f(x_{k-1},u_{k-1}) + w_k, \quad
+z_k = h(x_k) + v_k
+\]
+
+- \(w_k\): process noise
+- \(v_k\): measurement noise
+
+## Typical pipeline
+
+1. Prediction from dynamics
+2. Sensor update from observations
+3. Uncertainty-aware output to planning/control
+
+## Summary
+
+- Perception quality depends on both sensors and inference.
+- Uncertainty-aware estimation improves robustness.

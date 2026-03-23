@@ -1,0 +1,26 @@
+---
+title: "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics"
+---
+
+## Lecture slide
+
+- [Lecture 06 slides](../slides/06-robot-modeling-2-velocity-jacobians.qmd)
+
+## Key ideas
+
+- Velocity kinematics links joint velocity to task-space velocity.
+- The Jacobian captures local motion sensitivity at each configuration.
+- Inverse kinematics can be solved iteratively using Jacobian-based updates.
+
+## Core relation
+
+\[
+\dot{x} = J(q)\dot{q}, \quad
+\dot{q} \approx J(q)^{\dagger}\dot{x}_{des}
+\]
+
+## Review questions
+
+1. What does a Jacobian singularity mean physically?
+2. Why is \(J^\dagger\) useful for redundant systems?
+3. How does damping improve numerical IK near singularities?

@@ -1,0 +1,31 @@
+---
+title: "Lecture 10: Control I - Computed Torque Control"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Understand model-based control for robot joints.
+- Derive computed torque control from manipulator dynamics.
+- Analyze effects of model mismatch on tracking.
+
+## Control law
+
+\[
+\tau = M(q)\big(\ddot{q}_{des} + K_d \dot{e} + K_p e\big) + C(q,\dot{q})\dot{q} + g(q)
+\]
+
+- Dynamics compensation linearizes nominal behavior.
+- Feedback terms stabilize tracking error.
+
+## Practical concerns
+
+- Parameter uncertainty
+- Unmodeled friction/contact
+- Saturation and safety constraints
+
+## Summary
+
+- Computed torque can yield high-accuracy tracking.
+- Robustness depends on model quality and gain design.

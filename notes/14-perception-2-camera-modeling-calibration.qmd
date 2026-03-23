@@ -1,0 +1,32 @@
+---
+title: "Lecture 14 Notes: Perception II - Camera Modeling and Calibration"
+---
+
+## Lecture slide
+
+- [Lecture 14 slides](../slides/04-perception-2-rgbd-object-pose-estimation.qmd)
+
+## Key ideas
+
+- Camera models convert 3D geometry to 2D image observations.
+- Calibration identifies intrinsics/extrinsics and lens distortion parameters.
+- Reprojection error is a practical metric for calibration quality.
+
+## Pinhole projection
+
+\[
+\begin{bmatrix}
+u \\ v \\ 1
+\end{bmatrix}
+\sim
+K [R \mid t]
+\begin{bmatrix}
+X \\ Y \\ Z \\ 1
+\end{bmatrix}
+\]
+
+## Review questions
+
+1. What is the difference between intrinsic and extrinsic parameters?
+2. How does poor calibration affect 3D perception pipelines?
+3. Why are multiple views needed for robust calibration?

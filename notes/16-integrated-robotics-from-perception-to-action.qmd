@@ -1,0 +1,25 @@
+---
+title: "Lecture 16 Notes: Introduction to Robot Learning"
+---
+
+## Lecture slide
+
+- [Lecture 16 slides](../slides/16-integrated-robotic-systems.qmd)
+
+## Key ideas
+
+- Robot learning aims to improve behavior from data rather than only hand-crafted rules.
+- Supervised, imitation, and reinforcement learning solve different robotics problems.
+- Data quality, safety constraints, and sample efficiency drive method choice.
+
+## Learning paradigms
+
+1. **Supervised learning**: predict labels or state from data.
+2. **Imitation learning**: clone expert behavior from demonstrations.
+3. **Reinforcement learning**: optimize policies via reward and interaction.
+
+## Review questions
+
+1. Which robotics tasks fit imitation learning better than RL?
+2. Why is sim-to-real transfer difficult for learned policies?
+3. How do we evaluate safety when deploying learned controllers?

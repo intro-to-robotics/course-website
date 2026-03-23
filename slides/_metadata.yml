@@ -1,0 +1,9 @@
+format:
+  revealjs:
+    theme:
+      - default
+      - ../styles/mit-reveal.scss
+    slide-number: true
+    incremental: true
+    transition: fade
+    footer: "[Home](../index.html)"

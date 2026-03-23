@@ -1,0 +1,25 @@
+---
+title: "Lecture 09 Notes: Planning - Trajectory Generation and Motion Planning"
+---
+
+## Lecture slide
+
+- [Lecture 09 slides](../slides/09-motion-planning.qmd)
+
+## Key ideas
+
+- Planning computes feasible motion in configuration space under constraints.
+- Trajectory generation adds timing, smoothness, and dynamic feasibility.
+- Planner performance depends on representation, heuristics, and sampling strategy.
+
+## Core pipeline
+
+1. Build \(C\)-space and obstacle model.
+2. Find a feasible path (search or sampling).
+3. Time-parameterize and smooth into a trajectory.
+
+## Review questions
+
+1. What is the difference between a path and a trajectory?
+2. Why are narrow passages difficult for sampling planners?
+3. How do dynamic constraints alter planning outcomes?

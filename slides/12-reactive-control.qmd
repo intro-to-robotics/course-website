@@ -1,0 +1,30 @@
+---
+title: "Lecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control"
+author: "Yonghyeon Lee"
+date: today
+---
+
+## Learning goals
+
+- Compare reactive control strategies for online response.
+- Understand potential-field and velocity-field design.
+- See how MPC handles constraints explicitly.
+
+## Reactive methods
+
+- Potential fields: gradient-based motion
+- Velocity fields: direct vector guidance
+- MPC: finite-horizon optimization under constraints
+
+## MPC template
+
+\[
+\min_{u_{0:H-1}} \sum_{k=0}^{H}\|x_k-x_k^{ref}\|_Q^2 + \sum_{k=0}^{H-1}\|u_k\|_R^2
+\]
+
+subject to dynamics and safety constraints.
+
+## Summary
+
+- Reactive control is fast and practical.
+- Constraint handling is key for safe robot deployment.

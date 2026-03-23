@@ -1,0 +1,25 @@
+---
+title: "Lecture 05 Notes: Robot Modeling II - Forward Kinematics"
+---
+
+## Lecture slide
+
+- [Lecture 05 slides](../slides/05-robot-modeling-1-kinematics.qmd)
+
+## Key ideas
+
+- Forward kinematics maps joint configuration \(q\) to end-effector pose \(x\).
+- Kinematic chains are modeled by multiplying link-by-link transforms.
+- Workspace limits emerge from joint range and link geometry.
+
+## Core relation
+
+\[
+x = f(q), \quad T_{0e}(q) = T_{01}(q_1) T_{12}(q_2) \cdots T_{(n-1)n}(q_n)
+\]
+
+## Review questions
+
+1. What information is needed to compute forward kinematics?
+2. How does joint offset calibration affect \(f(q)\)?
+3. Why can different robots have similar reachable workspaces?

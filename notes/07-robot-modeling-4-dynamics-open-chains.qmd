@@ -1,0 +1,25 @@
+---
+title: "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains"
+---
+
+## Lecture slide
+
+- [Lecture 07 slides](../slides/07-robot-modeling-3-dynamics.qmd)
+
+## Key ideas
+
+- Dynamics explains how torques produce acceleration and motion.
+- Open-chain manipulators are commonly modeled with \(M, C, g\) terms.
+- Accurate dynamic models improve simulation and model-based control.
+
+## Standard manipulator equation
+
+\[
+M(q)\ddot{q} + C(q,\dot{q})\dot{q} + g(q) = \tau
+\]
+
+## Review questions
+
+1. What role does the mass matrix \(M(q)\) play?
+2. Why are Coriolis terms coupled with velocity?
+3. When can friction and unmodeled effects dominate predictions?
