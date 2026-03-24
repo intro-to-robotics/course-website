@@ -1,25 +1,188 @@
 ---
-title: "Lecture 09 Notes: Planning - Trajectory Generation and Motion Planning"
+title: "Planning and Control I - Trajectory Generation and Computed Torque Control"
 ---
 
-## Lecture slide
+## Trajectory
+A **Path** is a purely geometric description of the sequence of robot configurations. It can be denoted by $\theta(s)$ that maps a scalar parameter $s$, assumed to be $0$ 
+at the start and $1$ at the end, to a point in the robot's configuration space $\Theta$,  
+$$
+\theta : [0,1] \mapsto \Theta.
+$$
+As $s$ increases from $0$ to $1$, the robot moves along the path.
 
-- [Lecture 09 slides](../slides/09-motion-planning.qmd)
+::: {#exm-robot name="Sweep of \(s\) in Configuration Space (Path of 2D Plannar Robot Arm)"}
+<br>
+Consider a 2D plannar robot arm with two links -- where the first link length is $L_1=1$ and the second link length is $L_2=0.8$ --, with a configuration $\theta \in \Theta = [0, 2\pi]^2$, and a path 
+$$
+\theta(s)=
+\begin{bmatrix}
+\theta_1(s)\\
+\theta_2(s)
+\end{bmatrix}=
+\begin{bmatrix}
+2 \pi s^2\\
+2 \pi s
+\end{bmatrix}, \quad s\in[0,1].
+$$
+This path can be visualized as follows.
 
-## Key ideas
+```{python}
+#| code-fold: true
+#| code-summary: "Show Python code"
+import numpy as np
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
-- Planning computes feasible motion in configuration space under constraints.
-- Trajectory generation adds timing, smoothness, and dynamic feasibility.
-- Planner performance depends on representation, heuristics, and sampling strategy.
+# Parameter on the line segment [0, 1]
+s_grid = np.linspace(0.0, 1.0, 101)
 
-## Core pipeline
+# Arbitrary curve theta(s) = [theta1(s), theta2(s)]^T
+theta1 = 2 * np.pi * s_grid**2
+theta2 = 2 * np.pi * s_grid
 
-1. Build \(C\)-space and obstacle model.
-2. Find a feasible path (search or sampling).
-3. Time-parameterize and smooth into a trajectory.
+# 2-link planar arm lengths
+L1, L2 = 1.0, 0.8
 
-## Review questions
+def arm_points(t1, t2):
+    x0, y0 = 0.0, 0.0
+    x1, y1 = L1 * np.cos(t1), L1 * np.sin(t1)
+    x2 = x1 + L2 * np.cos(t1 + t2)
+    y2 = y1 + L2 * np.sin(t1 + t2)
+    return [x0, x1, x2], [y0, y1, y2]
 
-1. What is the difference between a path and a trajectory?
-2. Why are narrow passages difficult for sampling planners?
-3. How do dynamic constraints alter planning outcomes?
+# Precompute end-effector trajectory
+x1_all = L1 * np.cos(theta1)
+y1_all = L1 * np.sin(theta1)
+x2_all = x1_all + L2 * np.cos(theta1 + theta2)
+y2_all = y1_all + L2 * np.sin(theta1 + theta2)
+
+# Initial state
+t10, t20 = theta1[0], theta2[0]
+x_arm0, y_arm0 = arm_points(t10, t20)
+
+fig = make_subplots(
+    rows=1,
+    cols=3,
+    subplot_titles=(
+        "Line segment s in [0, 1]",
+        "Curve θ(s) in Θ",
+        "2D planar arm",
+    ),
+    horizontal_spacing=0.10,
+)
+
+# (Left) line segment and moving marker
+fig.add_trace(
+    go.Scatter(x=[0, 1], y=[0, 0], 
+    mode="lines", line=dict(color="black", width=3), showlegend=False),
+    row=1, col=1,
+)
+fig.add_trace(
+    go.Scatter(x=[s_grid[0]], y=[0], 
+    mode="markers", marker=dict(color="crimson", size=11), showlegend=False),
+    row=1, col=1,
+)
+
+# (Middle) curve in Theta-space and moving point
+fig.add_trace(
+    go.Scatter(x=theta1, y=theta2, 
+    mode="lines", line=dict(color="gray", width=2), showlegend=False),
+    row=1, col=2,
+)
+fig.add_trace(
+    go.Scatter(x=[theta1[0]], y=[theta2[0]], 
+    mode="markers", marker=dict(color="crimson", size=11), showlegend=False),
+    row=1, col=2,
+)
+
+# (Right) end-effector path and moving arm
+fig.add_trace(
+    go.Scatter(
+        x=x2_all,
+        y=y2_all,
+        mode="lines",
+        line=dict(color="gray", width=2, dash="dash"),
+        name="end-effector path",
+        showlegend=False,
+    ),
+    row=1, col=3,
+)
+fig.add_trace(
+    go.Scatter(
+        x=x_arm0,
+        y=y_arm0,
+        mode="lines+markers",
+        line=dict(color="#1f77b4", width=4),
+        marker=dict(color=["black", "#1f77b4", "crimson"], size=[8, 9, 10]),
+        showlegend=False,
+    ),
+    row=1, col=3,
+)
+
+# Frames for slider animation
+frames = []
+for i, sv in enumerate(s_grid):
+    t1, t2 = theta1[i], theta2[i]
+    x_arm, y_arm = arm_points(t1, t2)
+    frames.append(
+        go.Frame(
+            name=f"{sv:.2f}",
+            data=[
+                go.Scatter(x=[sv], y=[0]),          # left moving marker (trace index 1)
+                go.Scatter(x=[t1], y=[t2]),         # middle moving marker (trace index 3)
+                go.Scatter(x=x_arm, y=y_arm),       # right arm (trace index 5)
+            ],
+            traces=[1, 3, 5],
+        )
+    )
+fig.frames = frames
+
+# Slider UI
+steps = [
+    dict(
+        method="animate",
+        args=[
+            [f"{sv:.2f}"],
+            dict(mode="immediate", 
+            frame=dict(duration=0, redraw=True), 
+            transition=dict(duration=0)),
+        ],
+        label=f"{sv:.2f}",
+    )
+    for sv in s_grid
+]
+
+fig.update_layout(
+    sliders=[
+        dict(
+            active=0,
+            steps=steps,
+            x=0.12,
+            y=-0.12,
+            len=0.78,
+            currentvalue=dict(prefix="s = "),
+        )
+    ],
+    margin=dict(l=30, r=30, t=60, b=110),
+)
+
+# Axes formatting
+fig.update_xaxes(range=[-0.05, 1.05], title_text="s", row=1, col=1, zeroline=False)
+fig.update_yaxes(range=[-0.2, 0.2], showticklabels=False, 
+row=1, col=1, zeroline=False, scaleratio=1)
+
+fig.update_xaxes(title_text="θ₁", row=1, col=2)
+fig.update_yaxes(title_text="θ₂", row=1, col=2, scaleanchor="x2", scaleratio=1)
+
+reach = L1 + L2
+fig.update_xaxes(range=[-reach - 0.2, reach + 0.2], row=1, col=3)
+fig.update_yaxes(range=[-reach - 0.2, reach + 0.2], row=1, col=3, 
+scaleanchor="x3", scaleratio=1)
+
+fig.show()
+```
+::: 
+
+### Point-to-Point Trajectories
+#### Straight-Line Path
+

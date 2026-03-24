@@ -21,1033 +21,39 @@
     "text": "Suggested convention\n\ncode/lecture-XX-topic/ for lecture-specific materials\ncode/shared/ for reusable utilities\nInclude a short README.md in each directory"
   },
   {
-    "objectID": "notes/01-introduction-to-robotics.html",
-    "href": "notes/01-introduction-to-robotics.html",
-    "title": "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems",
+    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html",
+    "href": "notes/16-integrated-robotics-from-perception-to-action.html",
+    "title": "Lecture 16 Notes: Introduction to Robot Learning",
     "section": "",
-    "text": "Lecture 01 slides"
+    "text": "Lecture 16 slides"
   },
   {
-    "objectID": "notes/01-introduction-to-robotics.html#why-robotics",
-    "href": "notes/01-introduction-to-robotics.html#why-robotics",
-    "title": "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "2 1. Why robotics?",
-    "text": "2 1. Why robotics?\nRobotics integrates mechanics, electronics, and computation to build embodied intelligent systems.\nKey motivations:\n\nSafer operation in hazardous environments\nImproved precision and repeatability\nScalable automation in logistics, healthcare, and manufacturing"
-  },
-  {
-    "objectID": "notes/01-introduction-to-robotics.html#canonical-robot-architecture",
-    "href": "notes/01-introduction-to-robotics.html#canonical-robot-architecture",
-    "title": "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "3 2. Canonical robot architecture",
-    "text": "3 2. Canonical robot architecture\nA practical robot often includes:\n\nPlant: links, joints, motors, and transmission\nSensors: encoders, IMU, camera, LiDAR, force sensors\nCompute stack: estimation, planning, and control modules\nCommunication layer: middleware for real-time data flow"
-  },
-  {
-    "objectID": "notes/01-introduction-to-robotics.html#mathematical-foundations-preview",
-    "href": "notes/01-introduction-to-robotics.html#mathematical-foundations-preview",
-    "title": "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "4 3. Mathematical foundations (preview)",
-    "text": "4 3. Mathematical foundations (preview)\nFor a manipulator with joint configuration (q):\n\nForward kinematics: (x = f(q))\nDifferential kinematics: ( = J(q))\n\nThese models connect commanded joint motion to end-effector behavior."
-  },
-  {
-    "objectID": "notes/01-introduction-to-robotics.html#visualization-workflow",
-    "href": "notes/01-introduction-to-robotics.html#visualization-workflow",
-    "title": "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "5 4. Visualization workflow",
-    "text": "5 4. Visualization workflow\nEach lecture keeps code in a dedicated subdirectory under code/.\nFor lecture 01:\n\nCode directory README\nWorkspace plotting script"
-  },
-  {
-    "objectID": "notes/01-introduction-to-robotics.html#reading-checklist",
-    "href": "notes/01-introduction-to-robotics.html#reading-checklist",
-    "title": "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "6 5. Reading checklist",
-    "text": "6 5. Reading checklist\n\nDefine robotics in one sentence.\nExplain the role of each block in the robot pipeline.\nState the difference between (f(q)) and (J(q))."
-  },
-  {
-    "objectID": "slides/01-introduction-to-robotics.html#learning-goals",
-    "href": "slides/01-introduction-to-robotics.html#learning-goals",
-    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nUnderstand the scope of modern robotics.\nConnect modeling, actuation, perception, planning, and control.\nSee how all course modules fit into one robotics pipeline."
-  },
-  {
-    "objectID": "slides/01-introduction-to-robotics.html#what-is-a-robot",
-    "href": "slides/01-introduction-to-robotics.html#what-is-a-robot",
-    "title": "Lecture 01: Introduction",
-    "section": "What is a robot?",
-    "text": "What is a robot?\nA robot is a physical system that:\n\nPerceives the world with sensors\nComputes decisions with software\nActs on the world through actuators"
-  },
-  {
-    "objectID": "slides/01-introduction-to-robotics.html#core-pipeline",
-    "href": "slides/01-introduction-to-robotics.html#core-pipeline",
-    "title": "Lecture 01: Introduction",
-    "section": "Core pipeline",
-    "text": "Core pipeline\n\nModeling (kinematics, dynamics)\nPerception (state estimation, sensing)\nPlanning (trajectory / task planning)\nControl (feedback and stability)"
-  },
-  {
-    "objectID": "slides/01-introduction-to-robotics.html#example-course-visualization",
-    "href": "slides/01-introduction-to-robotics.html#example-course-visualization",
-    "title": "Lecture 01: Introduction",
-    "section": "Example course visualization",
-    "text": "Example course visualization\nWe keep lecture-specific visualization code in separate directories:\ncode/lecture-01-introduction/workspace_plot.py"
-  },
-  {
-    "objectID": "slides/01-introduction-to-robotics.html#next-lecture",
-    "href": "slides/01-introduction-to-robotics.html#next-lecture",
-    "title": "Lecture 01: Introduction",
-    "section": "Next lecture",
-    "text": "Next lecture\n\nCoordinate frames\nRigid body transforms\nHomogeneous transformation matrices"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to Robotics",
+    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#lecture-slide",
+    "href": "notes/16-integrated-robotics-from-perception-to-action.html#lecture-slide",
+    "title": "Lecture 16 Notes: Introduction to Robot Learning",
     "section": "",
-    "text": "Robotics combines mechanics, electronics, and computation to build autonomous physical systems. This course introduces the core ideas behind modeling, simulation, planning, control, and perception."
+    "text": "Lecture 16 slides"
   },
   {
-    "objectID": "index.html#course-structure",
-    "href": "index.html#course-structure",
-    "title": "Introduction to Robotics",
-    "section": "Course structure",
-    "text": "Course structure\n\nslides/: RevealJS slide decks for each lecture.\nnotes/: Detailed notes for each lecture.\ncode/: Separate directories with visualization and simulation code."
-  },
-  {
-    "objectID": "index.html#quick-start",
-    "href": "index.html#quick-start",
-    "title": "Introduction to Robotics",
-    "section": "Quick start",
-    "text": "Quick start\n\nInstall Quarto.\nFrom the project root, run:\n\nquarto preview\n\nPublish the generated docs/ folder to any static host (for example, GitHub Pages)."
-  },
-  {
-    "objectID": "slides/index.html#lectures",
-    "href": "slides/index.html#lectures",
-    "title": "Lecture Slides",
-    "section": "Lectures",
-    "text": "Lectures\n\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems\nLecture 01: Introduction – A Roadmap to Autonomous Robotic Systems"
-  },
-  {
-    "objectID": "slides/index.html#how-to-add-a-new-lecture-slide-deck",
-    "href": "slides/index.html#how-to-add-a-new-lecture-slide-deck",
-    "title": "Lecture Slides",
-    "section": "How to add a new lecture slide deck",
-    "text": "How to add a new lecture slide deck\n\nCopy 01-introduction-to-robotics.qmd.\nRename it with your lecture number and title.\nAdd the new file link to this page."
-  },
-  {
-    "objectID": "notes/index.html",
-    "href": "notes/index.html",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Introduction\nLecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\n\n\nRobot Modeling\nLecture 02: Robot Modeling I - Rigid Body Motions Lecture 03: Robot Modeling II - Forward Kinematics Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics Lecture 05: Robot Modeling IV - Dynamics of Open Chains Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\n\n\nActuation\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control\n\n\nPlanning and Control\nLecture 09: Planning and Control I - Trajectory Generation and Computed Torque Control Lecture 10: Planning II - Motion Planning Lecture 11: Control II - Operational-Space Control Lecture 12: Reactive Control - Potential Field and Velocity Field Control\n\n\nPerception\nLecture 13: Perception I - Sensors, Measurements, and Noise Lecture 14: Perception II - Camera Modeling and Calibration Lecture 15: Perception III - Object Pose Estimation\n\n\nIntegration\nLecture 16: Integrated Robotic Systems"
-  },
-  {
-    "objectID": "notes/index.html#lectures",
-    "href": "notes/index.html#lectures",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\n\n\n\nLecture 02: Robot Modeling I - Rigid Body Motions Lecture 03: Robot Modeling II - Forward Kinematics Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics Lecture 05: Robot Modeling IV - Dynamics of Open Chains Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\n\n\n\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control\n\n\n\nLecture 09: Planning - Trajectory Generation and Motion Planning Lecture 10: Control I - Computed Torque Control Lecture 11: Control II - Operational-Space Control Lecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control\n\n\n\nLecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation Lecture 14: Perception II - Camera Modeling and Calibration\n\n\n\nLecture 15: A Brief Introduction to Robot Learning"
-  },
-  {
-    "objectID": "notes/index.html#how-to-add-a-new-note",
-    "href": "notes/index.html#how-to-add-a-new-note",
-    "title": "Lecture Notes",
-    "section": "2 How to add a new note",
-    "text": "2 How to add a new note\n\nCopy 01-introduction-to-robotics.qmd.\nRename it with your lecture number and title.\nAdd the new file link to this page."
-  },
-  {
-    "objectID": "slides/index.html#lectures-12",
-    "href": "slides/index.html#lectures-12",
-    "title": "Lecture Slides",
-    "section": "Lectures (1/2)",
-    "text": "Lectures (1/2)\n\nLecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\nLecture 02: Robot Modeling I - Rigid Body Motions\nLecture 03: Robot Modeling II - Forward Kinematics\nLecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics\nLecture 05: Robot Modeling IV - Dynamics of Open Chains\nLecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation\nLecture 08: Actuation II - Actuator Dynamics and Low-Level Control"
-  },
-  {
-    "objectID": "slides/index.html#lectures-22",
-    "href": "slides/index.html#lectures-22",
-    "title": "Lecture Slides",
-    "section": "Lectures (2/2)",
-    "text": "Lectures (2/2)\n\nLecture 09: Planning - Trajectory Generation and Motion Planning\nLecture 10: Control I - Computed Torque Control\nLecture 11: Control II - Operational-Space Control\nLecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control\nLecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation\nLecture 14: Perception II - Camera Modeling and Calibration\nLecture 15: A Brief Introduction to Learning-Based Robot Control"
-  },
-  {
-    "objectID": "slides/15-real-world-robot-control.html#learning-goals",
-    "href": "slides/15-real-world-robot-control.html#learning-goals",
-    "title": "Lecture 15: Perception III",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nCompare modern perception pipelines for robotics applications.\nUnderstand multimodal sensing and learned representations.\nEvaluate robustness, uncertainty, and generalization in perception systems."
-  },
-  {
-    "objectID": "slides/15-real-world-robot-control.html#core-topics",
-    "href": "slides/15-real-world-robot-control.html#core-topics",
-    "title": "Lecture 15: Perception III",
-    "section": "Core topics",
-    "text": "Core topics\n\nMultimodal perception (RGB, depth, tactile, language)\nFoundation models and representation learning\nDetection, segmentation, and 3D understanding\nUncertainty, domain shift, and robustness"
-  },
-  {
-    "objectID": "slides/15-real-world-robot-control.html#suggested-in-class-example",
-    "href": "slides/15-real-world-robot-control.html#suggested-in-class-example",
-    "title": "Lecture 15: Perception III",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nCompare a classical vision pipeline and a learned model on the same robotic perception task."
-  },
-  {
-    "objectID": "slides/15-real-world-robot-control.html#summary",
-    "href": "slides/15-real-world-robot-control.html#summary",
-    "title": "Lecture 15: Perception III",
-    "section": "Summary",
-    "text": "Summary\n\nModern perception combines geometric priors with data-driven learning.\nReliability under distribution shift is a central deployment challenge."
-  },
-  {
-    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#learning-goals",
-    "href": "slides/13-actuation-1-motors-transmissions-torque.html#learning-goals",
-    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nExplain how electric motors generate torque.\nUnderstand gear/transmission trade-offs.\nConnect actuator sizing to robot task demands."
-  },
-  {
-    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#core-topics",
-    "href": "slides/13-actuation-1-motors-transmissions-torque.html#core-topics",
-    "title": "Lecture 02: Actuation I",
-    "section": "Core topics",
-    "text": "Core topics\n\nDC/BLDC motor basics\nTorque-speed curves and efficiency\nGearboxes, belts, and transmissions\nSizing actuators for robotic tasks"
-  },
-  {
-    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#suggested-in-class-example",
-    "href": "slides/13-actuation-1-motors-transmissions-torque.html#suggested-in-class-example",
-    "title": "Lecture 02: Actuation I",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nSelect motor and gearing for a joint with specified torque/velocity targets."
-  },
-  {
-    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#summary",
-    "href": "slides/13-actuation-1-motors-transmissions-torque.html#summary",
-    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "Summary",
-    "text": "Summary\n\nActuation sets physical limits of robot behavior.\nElectrical, mechanical, and thermal design must be co-optimized."
-  },
-  {
-    "objectID": "slides/11-control-2-operational-space-control.html#learning-goals",
-    "href": "slides/11-control-2-operational-space-control.html#learning-goals",
-    "title": "Lecture 11: Control II - Operational-Space Control",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nControl motion directly in task space.\nUse Jacobian mappings between force and torque.\nHandle redundancy with null-space objectives."
-  },
-  {
-    "objectID": "slides/11-control-2-operational-space-control.html#core-topics",
-    "href": "slides/11-control-2-operational-space-control.html#core-topics",
-    "title": "Lecture 11: Control II",
-    "section": "Core topics",
-    "text": "Core topics\n\nTask-space dynamics\nOperational-space formulation\nRedundancy resolution\nConstraints and priorities"
-  },
-  {
-    "objectID": "slides/11-control-2-operational-space-control.html#suggested-in-class-example",
-    "href": "slides/11-control-2-operational-space-control.html#suggested-in-class-example",
-    "title": "Lecture 11: Control II",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nDesign an end-effector tracking controller with posture control in null space."
-  },
-  {
-    "objectID": "slides/11-control-2-operational-space-control.html#summary",
-    "href": "slides/11-control-2-operational-space-control.html#summary",
-    "title": "Lecture 11: Control II - Operational-Space Control",
-    "section": "Summary",
-    "text": "Summary\n\nOperational-space control aligns control with task goals.\nRedundancy can be exploited for safer, smoother behavior."
-  },
-  {
-    "objectID": "slides/09-motion-planning.html#learning-goals",
-    "href": "slides/09-motion-planning.html#learning-goals",
-    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nFormulate motion planning in configuration space.\nCompare search-based and sampling-based methods.\nDistinguish path planning from trajectory generation."
-  },
-  {
-    "objectID": "slides/09-motion-planning.html#core-topics",
-    "href": "slides/09-motion-planning.html#core-topics",
-    "title": "Lecture 09: Planning",
-    "section": "Core topics",
-    "text": "Core topics\n\nConfiguration space and obstacles\nGraph search planners\nSampling-based planners (PRM/RRT family)\nPath smoothing and trajectory generation"
-  },
-  {
-    "objectID": "slides/09-motion-planning.html#suggested-in-class-example",
-    "href": "slides/09-motion-planning.html#suggested-in-class-example",
-    "title": "Lecture 09: Planning",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nPlan a collision-free path in a 2D workspace with narrow passages."
-  },
-  {
-    "objectID": "slides/09-motion-planning.html#summary",
-    "href": "slides/09-motion-planning.html#summary",
-    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
-    "section": "Summary",
-    "text": "Summary\n\nPlanning bridges goals and physical execution.\nRepresentation and constraints determine planner behavior."
-  },
-  {
-    "objectID": "slides/07-robot-modeling-3-dynamics.html#learning-goals",
-    "href": "slides/07-robot-modeling-3-dynamics.html#learning-goals",
-    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nDerive open-chain manipulator dynamics.\nInterpret inertia, Coriolis, and gravity terms.\nConnect dynamic models to simulation and control."
-  },
-  {
-    "objectID": "slides/07-robot-modeling-3-dynamics.html#core-topics",
-    "href": "slides/07-robot-modeling-3-dynamics.html#core-topics",
-    "title": "Lecture 07: Robot Modeling IV",
-    "section": "Core topics",
-    "text": "Core topics\n\nLagrangian and Newton-Euler methods\nMass matrix, Coriolis, and gravity terms\nInverse dynamics and forward dynamics\nPractical modeling assumptions"
-  },
-  {
-    "objectID": "slides/07-robot-modeling-3-dynamics.html#suggested-in-class-example",
-    "href": "slides/07-robot-modeling-3-dynamics.html#suggested-in-class-example",
-    "title": "Lecture 07: Robot Modeling IV",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nDerive 2-link manipulator equations and inspect parameter effects."
-  },
-  {
-    "objectID": "slides/07-robot-modeling-3-dynamics.html#summary",
-    "href": "slides/07-robot-modeling-3-dynamics.html#summary",
-    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "Summary",
-    "text": "Summary\n\nDynamics tells us how torque becomes motion.\nAccurate models improve tracking and robustness."
-  },
-  {
-    "objectID": "slides/05-robot-modeling-1-kinematics.html#learning-goals",
-    "href": "slides/05-robot-modeling-1-kinematics.html#learning-goals",
-    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nMap joint variables to end-effector pose.\nBuild serial-chain transforms from link models.\nInterpret robot workspace from kinematic structure."
-  },
-  {
-    "objectID": "slides/05-robot-modeling-1-kinematics.html#core-topics",
-    "href": "slides/05-robot-modeling-1-kinematics.html#core-topics",
-    "title": "Lecture 05: Robot Modeling II",
-    "section": "Core topics",
-    "text": "Core topics\n\nKinematic chains and joint parameterization\nForward kinematics\nHomogeneous transforms in kinematic chains\nWorkspace intuition"
-  },
-  {
-    "objectID": "slides/05-robot-modeling-1-kinematics.html#suggested-in-class-example",
-    "href": "slides/05-robot-modeling-1-kinematics.html#suggested-in-class-example",
-    "title": "Lecture 05: Robot Modeling II",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nSolve forward kinematics for a planar 2-DOF arm and visualize the workspace."
-  },
-  {
-    "objectID": "slides/05-robot-modeling-1-kinematics.html#summary",
-    "href": "slides/05-robot-modeling-1-kinematics.html#summary",
-    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
-    "section": "Summary",
-    "text": "Summary\n\nForward kinematics is the first step toward motion generation.\nIt provides the geometry required for inverse and differential methods."
-  },
-  {
-    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#learning-goals",
-    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#learning-goals",
-    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nCompare sensing modalities used in robotics.\nModel process/measurement uncertainty.\nUnderstand the structure of state-estimation pipelines."
-  },
-  {
-    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#core-topics",
-    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#core-topics",
-    "title": "Lecture 13: Perception I",
-    "section": "Core topics",
-    "text": "Core topics\n\nSensor models and measurement equations\nSources of noise and bias\nProbabilistic state estimation\nFiltering overview"
-  },
-  {
-    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#suggested-in-class-example",
-    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#suggested-in-class-example",
-    "title": "Lecture 13: Perception I",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nEstimate robot position from noisy distance measurements and discuss error behavior."
-  },
-  {
-    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#summary",
-    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#summary",
-    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "Summary",
-    "text": "Summary\n\nPerception quality depends on both sensors and inference.\nUncertainty-aware estimation improves robustness."
-  },
-  {
-    "objectID": "slides/02-mathematical-foundations-se3.html#learning-goals",
-    "href": "slides/02-mathematical-foundations-se3.html#learning-goals",
-    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nDescribe rigid-body motion in 2D and 3D.\nUse homogeneous transforms for frame-to-frame mapping.\nUnderstand the role of SE(3) in robotics."
-  },
-  {
-    "objectID": "slides/02-mathematical-foundations-se3.html#core-topics",
-    "href": "slides/02-mathematical-foundations-se3.html#core-topics",
-    "title": "Lecture 04: Mobot Modeling I",
-    "section": "Core topics",
-    "text": "Core topics\n\nCoordinate frames and frame changes\nHomogeneous transformation matrices\nComposition and inversion of transforms\nSE(3) intuition and notation"
-  },
-  {
-    "objectID": "slides/02-mathematical-foundations-se3.html#suggested-in-class-example",
-    "href": "slides/02-mathematical-foundations-se3.html#suggested-in-class-example",
-    "title": "Lecture 04: Mobot Modeling I",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nDerive a base-to-end-effector transform by chaining multiple frame transforms."
-  },
-  {
-    "objectID": "slides/02-mathematical-foundations-se3.html#summary",
-    "href": "slides/02-mathematical-foundations-se3.html#summary",
-    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
-    "section": "Summary",
-    "text": "Summary\n\nRigid-body transforms are the geometric language of robotics.\nSE(3) is the foundation for kinematics, perception, and control."
-  },
-  {
-    "objectID": "slides/04-perception-2-rgbd-object-pose-estimation.html#learning-goals",
-    "href": "slides/04-perception-2-rgbd-object-pose-estimation.html#learning-goals",
-    "title": "Lecture 14: Perception II - Camera Modeling and Calibration",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nUnderstand camera geometry for robotics.\nDistinguish intrinsic and extrinsic parameters.\nPerform and validate camera calibration."
-  },
-  {
-    "objectID": "slides/04-perception-2-rgbd-object-pose-estimation.html#core-topics",
-    "href": "slides/04-perception-2-rgbd-object-pose-estimation.html#core-topics",
-    "title": "Lecture 14: Perception II",
-    "section": "Core topics",
-    "text": "Core topics\n\nPinhole camera model and distortion\nIntrinsic and extrinsic calibration\nCalibration targets and optimization workflow\nError analysis and validation metrics"
-  },
-  {
-    "objectID": "slides/04-perception-2-rgbd-object-pose-estimation.html#suggested-in-class-example",
-    "href": "slides/04-perception-2-rgbd-object-pose-estimation.html#suggested-in-class-example",
-    "title": "Lecture 14: Perception II",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nCalibrate a camera from checkerboard images and interpret reprojection error."
-  },
-  {
-    "objectID": "slides/04-perception-2-rgbd-object-pose-estimation.html#summary",
-    "href": "slides/04-perception-2-rgbd-object-pose-estimation.html#summary",
-    "title": "Lecture 14: Perception II - Camera Modeling and Calibration",
-    "section": "Summary",
-    "text": "Summary\n\nCalibration is foundational for 3D perception.\nBetter calibration yields more reliable downstream control."
-  },
-  {
-    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#learning-goals",
-    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#learning-goals",
-    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nRelate joint velocities to task-space velocities.\nDerive and interpret manipulator Jacobians.\nSolve inverse kinematics iteratively."
-  },
-  {
-    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#core-topics",
-    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#core-topics",
-    "title": "Lecture 06: Robot Modeling III",
-    "section": "Core topics",
-    "text": "Core topics\n\nDifferential kinematics\nGeometric and analytic Jacobians\nSingularity analysis\nIterative inverse-kinematics with pseudoinverse Jacobians"
-  },
-  {
-    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#suggested-in-class-example",
-    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#suggested-in-class-example",
-    "title": "Lecture 06: Robot Modeling III",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nImplement one step of Jacobian pseudoinverse inverse-kinematics for a 3-DOF arm."
-  },
-  {
-    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#summary",
-    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#summary",
-    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "Summary",
-    "text": "Summary\n\nJacobians connect geometry and motion.\nIK turns task goals into executable joint commands."
-  },
-  {
-    "objectID": "slides/08-robot-simulation.html#learning-goals",
-    "href": "slides/08-robot-simulation.html#learning-goals",
-    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nUnderstand the simulation stack for robotics.\nCompare common physics engines and assumptions.\nAnalyze contact modeling and numerical stability."
-  },
-  {
-    "objectID": "slides/08-robot-simulation.html#core-topics",
-    "href": "slides/08-robot-simulation.html#core-topics",
-    "title": "Lecture 08: Robot Simulation",
-    "section": "Core topics",
-    "text": "Core topics\n\nRobot/environment modeling\nContact and physics integration\nSimulation architecture and tooling\nSim-to-real considerations"
-  },
-  {
-    "objectID": "slides/08-robot-simulation.html#suggested-in-class-example",
-    "href": "slides/08-robot-simulation.html#suggested-in-class-example",
-    "title": "Lecture 08: Robot Simulation",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nBuild a minimal simulation loop for pick-and-place with logging."
-  },
-  {
-    "objectID": "slides/08-robot-simulation.html#summary",
-    "href": "slides/08-robot-simulation.html#summary",
-    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "Summary",
-    "text": "Summary\n\nSimulation accelerates iteration before hardware tests.\nContact fidelity is critical for manipulation tasks."
-  },
-  {
-    "objectID": "slides/10-control-1-pid-basics.html#learning-goals",
-    "href": "slides/10-control-1-pid-basics.html#learning-goals",
-    "title": "Lecture 10: Control I - Computed Torque Control",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nUnderstand model-based control for robot joints.\nDerive computed torque control from manipulator dynamics.\nAnalyze effects of model mismatch on tracking."
-  },
-  {
-    "objectID": "slides/10-control-1-pid-basics.html#core-topics",
-    "href": "slides/10-control-1-pid-basics.html#core-topics",
-    "title": "Lecture 10: Control I",
-    "section": "Core topics",
-    "text": "Core topics\n\nManipulator dynamics recap ((M, C, g))\nFeedback linearization intuition\nComputed torque control law\nRobustness under modeling errors"
-  },
-  {
-    "objectID": "slides/10-control-1-pid-basics.html#suggested-in-class-example",
-    "href": "slides/10-control-1-pid-basics.html#suggested-in-class-example",
-    "title": "Lecture 10: Control I",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nTrack a reference trajectory using computed torque control and inspect error under parameter mismatch."
-  },
-  {
-    "objectID": "slides/10-control-1-pid-basics.html#summary",
-    "href": "slides/10-control-1-pid-basics.html#summary",
-    "title": "Lecture 10: Control I - Computed Torque Control",
-    "section": "Summary",
-    "text": "Summary\n\nComputed torque can yield high-accuracy tracking.\nRobustness depends on model quality and gain design."
-  },
-  {
-    "objectID": "slides/12-reactive-control.html#learning-goals",
-    "href": "slides/12-reactive-control.html#learning-goals",
-    "title": "Lecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nCompare reactive control strategies for online response.\nUnderstand potential-field and velocity-field design.\nSee how MPC handles constraints explicitly."
-  },
-  {
-    "objectID": "slides/12-reactive-control.html#core-topics",
-    "href": "slides/12-reactive-control.html#core-topics",
-    "title": "Lecture 12: Reactive Control",
-    "section": "Core topics",
-    "text": "Core topics\n\nReactive vs deliberative control\nPotential-field navigation\nVelocity-field design\nMPC overview for robotic systems"
-  },
-  {
-    "objectID": "slides/12-reactive-control.html#suggested-in-class-example",
-    "href": "slides/12-reactive-control.html#suggested-in-class-example",
-    "title": "Lecture 12: Reactive Control",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nCompare obstacle-avoidance behavior using potential fields and MPC."
-  },
-  {
-    "objectID": "slides/12-reactive-control.html#summary",
-    "href": "slides/12-reactive-control.html#summary",
-    "title": "Lecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
-    "section": "Summary",
-    "text": "Summary\n\nReactive control is fast and practical.\nConstraint handling is key for safe robot deployment."
-  },
-  {
-    "objectID": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#learning-goals",
-    "href": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#learning-goals",
-    "title": "Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nModel basic actuator dynamics.\nUnderstand cascaded servo control loops.\nEvaluate delay, saturation, and bandwidth limits."
-  },
-  {
-    "objectID": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#core-topics",
-    "href": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#core-topics",
-    "title": "Lecture 03: Actuation II",
-    "section": "Core topics",
-    "text": "Core topics\n\nActuator dynamic models\nCurrent, velocity, and position loops\nSampling, quantization, and latency effects\nSafety and fault-handling basics"
-  },
-  {
-    "objectID": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#suggested-in-class-example",
-    "href": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#suggested-in-class-example",
-    "title": "Lecture 03: Actuation II",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nAnalyze a cascaded control architecture under saturation limits."
-  },
-  {
-    "objectID": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#summary",
-    "href": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#summary",
-    "title": "Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control",
-    "section": "Summary",
-    "text": "Summary\n\nLow-level servo quality shapes high-level task performance.\nStable cascaded tuning is essential for reliable robots."
-  },
-  {
-    "objectID": "slides/16-integrated-robotic-systems.html#learning-goals",
-    "href": "slides/16-integrated-robotic-systems.html#learning-goals",
-    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nUnderstand why learning is used in robot control.\nCompare imitation learning and reinforcement learning.\nIdentify practical barriers for real-world deployment."
-  },
-  {
-    "objectID": "slides/16-integrated-robotic-systems.html#core-topics",
-    "href": "slides/16-integrated-robotic-systems.html#core-topics",
-    "title": "Lecture 16: Introduction to Robot Learning",
-    "section": "Core topics",
-    "text": "Core topics\n\nWhy learn in robotics? Limits of hand-designed pipelines\nBehavior cloning and imitation learning basics\nReinforcement learning fundamentals in control tasks\nOffline data, sim-to-real, and safety considerations"
-  },
-  {
-    "objectID": "slides/16-integrated-robotic-systems.html#suggested-in-class-example",
-    "href": "slides/16-integrated-robotic-systems.html#suggested-in-class-example",
-    "title": "Lecture 16: Introduction to Robot Learning",
-    "section": "Suggested in-class example",
-    "text": "Suggested in-class example\nTrain a simple policy in simulation and discuss what blocks real-world transfer."
-  },
-  {
-    "objectID": "slides/16-integrated-robotic-systems.html#summary",
-    "href": "slides/16-integrated-robotic-systems.html#summary",
-    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
-    "section": "Summary",
-    "text": "Summary\n\nLearning can reduce manual controller engineering.\nRobustness, safety, and sample efficiency remain core challenges."
-  },
-  {
-    "objectID": "notes/01-introduction-to-robotics.html#lecture-slide",
-    "href": "notes/01-introduction-to-robotics.html#lecture-slide",
-    "title": "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "",
-    "text": "Lecture 01 slides"
-  },
-  {
-    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html",
-    "href": "notes/15-perception-3-registration-object-pose-estimation.html",
-    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
-    "section": "",
-    "text": "Lecture 15 slides"
-  },
-  {
-    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#lecture-slide",
-    "href": "notes/15-perception-3-registration-object-pose-estimation.html#lecture-slide",
-    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
-    "section": "",
-    "text": "Lecture 15 slides"
-  },
-  {
-    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#key-ideas",
-    "href": "notes/15-perception-3-registration-object-pose-estimation.html#key-ideas",
-    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
+    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#key-ideas",
+    "href": "notes/16-integrated-robotics-from-perception-to-action.html#key-ideas",
+    "title": "Lecture 16 Notes: Introduction to Robot Learning",
     "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nModern robot perception combines geometric methods with learned representations.\nMultimodal inputs (RGB, depth, language, force) improve task-level understanding.\nRobustness to domain shift and uncertainty is essential for deployment."
+    "text": "2 Key ideas\n\nRobot learning aims to improve behavior from data rather than only hand-crafted rules.\nSupervised, imitation, and reinforcement learning solve different robotics problems.\nData quality, safety constraints, and sample efficiency drive method choice."
   },
   {
-    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#common-workflow",
-    "href": "notes/15-perception-3-registration-object-pose-estimation.html#common-workflow",
-    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
-    "section": "3 Common workflow",
-    "text": "3 Common workflow\n\nBuild scene representation from multimodal sensor streams.\nRun detection/segmentation/tracking with learned or hybrid models.\nEstimate uncertainty and hand off structured outputs to planning/control."
+    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#learning-paradigms",
+    "href": "notes/16-integrated-robotics-from-perception-to-action.html#learning-paradigms",
+    "title": "Lecture 16 Notes: Introduction to Robot Learning",
+    "section": "3 Learning paradigms",
+    "text": "3 Learning paradigms\n\nSupervised learning: predict labels or state from data.\nImitation learning: clone expert behavior from demonstrations.\nReinforcement learning: optimize policies via reward and interaction."
   },
   {
-    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#review-questions",
-    "href": "notes/15-perception-3-registration-object-pose-estimation.html#review-questions",
-    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
+    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#review-questions",
+    "href": "notes/16-integrated-robotics-from-perception-to-action.html#review-questions",
+    "title": "Lecture 16 Notes: Introduction to Robot Learning",
     "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhat benefits does multimodal sensing provide over RGB-only perception?\nWhy is uncertainty estimation important in robot decision pipelines?\nHow can domain adaptation reduce performance drop in new environments?"
-  },
-  {
-    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html",
-    "href": "notes/13-perception-1-sensors-noise-state-estimation.html",
-    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "",
-    "text": "Lecture 13 slides"
-  },
-  {
-    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#lecture-slide",
-    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#lecture-slide",
-    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "",
-    "text": "Lecture 13 slides"
-  },
-  {
-    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#key-ideas",
-    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#key-ideas",
-    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nSensors provide indirect, noisy measurements of robot/environment state.\nEstimation combines models and measurements to infer latent state.\nUncertainty tracking is essential for robust decisions."
-  },
-  {
-    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#estimation-view",
-    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#estimation-view",
-    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "3 Estimation view",
-    "text": "3 Estimation view\n[ x_k = f(x_{k-1}, u_{k-1}) + w_k, z_k = h(x_k) + v_k ]\nwhere (w_k) and (v_k) represent process and measurement noise."
-  },
-  {
-    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#review-questions",
-    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#review-questions",
-    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhy is sensor fusion often better than a single sensor?\nHow does measurement noise propagate to state uncertainty?\nWhat assumptions are needed for Kalman-style filtering?"
-  },
-  {
-    "objectID": "notes/11-control-2-operational-space-control.html",
-    "href": "notes/11-control-2-operational-space-control.html",
-    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
-    "section": "",
-    "text": "Lecture 11 slides"
-  },
-  {
-    "objectID": "notes/11-control-2-operational-space-control.html#lecture-slide",
-    "href": "notes/11-control-2-operational-space-control.html#lecture-slide",
-    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
-    "section": "",
-    "text": "Lecture 11 slides"
-  },
-  {
-    "objectID": "notes/11-control-2-operational-space-control.html#key-ideas",
-    "href": "notes/11-control-2-operational-space-control.html#key-ideas",
-    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nOperational-space control directly regulates end-effector motion/force.\nJacobians map between joint space and task space.\nRedundant robots can execute secondary objectives in null space."
-  },
-  {
-    "objectID": "notes/11-control-2-operational-space-control.html#core-relation",
-    "href": "notes/11-control-2-operational-space-control.html#core-relation",
-    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
-    "section": "3 Core relation",
-    "text": "3 Core relation\n[ = J(q), = J^T F + N(q)_{null} ]"
-  },
-  {
-    "objectID": "notes/11-control-2-operational-space-control.html#review-questions",
-    "href": "notes/11-control-2-operational-space-control.html#review-questions",
-    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhy is task-space control useful for manipulation tasks?\nWhat is null-space motion and when is it beneficial?\nHow do joint limits change operational-space design?"
-  },
-  {
-    "objectID": "notes/09-planning-trajectory-generation-motion-planning.html",
-    "href": "notes/09-planning-trajectory-generation-motion-planning.html",
-    "title": "Lecture 09 Notes: Planning - Trajectory Generation and Motion Planning",
-    "section": "",
-    "text": "Lecture 09 slides"
-  },
-  {
-    "objectID": "notes/09-planning-trajectory-generation-motion-planning.html#lecture-slide",
-    "href": "notes/09-planning-trajectory-generation-motion-planning.html#lecture-slide",
-    "title": "Lecture 09 Notes: Planning - Trajectory Generation and Motion Planning",
-    "section": "",
-    "text": "Lecture 09 slides"
-  },
-  {
-    "objectID": "notes/09-planning-trajectory-generation-motion-planning.html#key-ideas",
-    "href": "notes/09-planning-trajectory-generation-motion-planning.html#key-ideas",
-    "title": "Lecture 09 Notes: Planning - Trajectory Generation and Motion Planning",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nPlanning computes feasible motion in configuration space under constraints.\nTrajectory generation adds timing, smoothness, and dynamic feasibility.\nPlanner performance depends on representation, heuristics, and sampling strategy."
-  },
-  {
-    "objectID": "notes/09-planning-trajectory-generation-motion-planning.html#core-pipeline",
-    "href": "notes/09-planning-trajectory-generation-motion-planning.html#core-pipeline",
-    "title": "Lecture 09 Notes: Planning - Trajectory Generation and Motion Planning",
-    "section": "3 Core pipeline",
-    "text": "3 Core pipeline\n\nBuild (C)-space and obstacle model.\nFind a feasible path (search or sampling).\nTime-parameterize and smooth into a trajectory."
-  },
-  {
-    "objectID": "notes/09-planning-trajectory-generation-motion-planning.html#review-questions",
-    "href": "notes/09-planning-trajectory-generation-motion-planning.html#review-questions",
-    "title": "Lecture 09 Notes: Planning - Trajectory Generation and Motion Planning",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhat is the difference between a path and a trajectory?\nWhy are narrow passages difficult for sampling planners?\nHow do dynamic constraints alter planning outcomes?"
-  },
-  {
-    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html",
-    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html",
-    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "",
-    "text": "Lecture 07 slides"
-  },
-  {
-    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#lecture-slide",
-    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#lecture-slide",
-    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "",
-    "text": "Lecture 07 slides"
-  },
-  {
-    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#key-ideas",
-    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#key-ideas",
-    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nDynamics explains how torques produce acceleration and motion.\nOpen-chain manipulators are commonly modeled with (M, C, g) terms.\nAccurate dynamic models improve simulation and model-based control."
-  },
-  {
-    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#standard-manipulator-equation",
-    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#standard-manipulator-equation",
-    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "3 Standard manipulator equation",
-    "text": "3 Standard manipulator equation\n[ M(q) + C(q,) + g(q) = ]"
-  },
-  {
-    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#review-questions",
-    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#review-questions",
-    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhat role does the mass matrix (M(q)) play?\nWhy are Coriolis terms coupled with velocity?\nWhen can friction and unmodeled effects dominate predictions?"
-  },
-  {
-    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html",
-    "href": "notes/05-robot-modeling-2-forward-kinematics.html",
-    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
-    "section": "",
-    "text": "Lecture 05 slides"
-  },
-  {
-    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#lecture-slide",
-    "href": "notes/05-robot-modeling-2-forward-kinematics.html#lecture-slide",
-    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
-    "section": "",
-    "text": "Lecture 05 slides"
-  },
-  {
-    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#key-ideas",
-    "href": "notes/05-robot-modeling-2-forward-kinematics.html#key-ideas",
-    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nForward kinematics maps joint configuration (q) to end-effector pose (x).\nKinematic chains are modeled by multiplying link-by-link transforms.\nWorkspace limits emerge from joint range and link geometry."
-  },
-  {
-    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#core-relation",
-    "href": "notes/05-robot-modeling-2-forward-kinematics.html#core-relation",
-    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
-    "section": "3 Core relation",
-    "text": "3 Core relation\n[ x = f(q), T_{0e}(q) = T_{01}(q_1) T_{12}(q_2) T_{(n-1)n}(q_n) ]"
-  },
-  {
-    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#review-questions",
-    "href": "notes/05-robot-modeling-2-forward-kinematics.html#review-questions",
-    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhat information is needed to compute forward kinematics?\nHow does joint offset calibration affect (f(q))?\nWhy can different robots have similar reachable workspaces?"
-  },
-  {
-    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html",
-    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html",
-    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
-    "section": "",
-    "text": "Lecture 03 slides"
-  },
-  {
-    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#lecture-slide",
-    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#lecture-slide",
-    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
-    "section": "",
-    "text": "Lecture 03 slides"
-  },
-  {
-    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#key-ideas",
-    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#key-ideas",
-    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nLow-level control is usually implemented as cascaded current, velocity, and position loops.\nReal actuators have delay, saturation, friction, and finite sampling effects.\nStability margins depend on both plant dynamics and controller timing."
-  },
-  {
-    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#typical-model",
-    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#typical-model",
-    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
-    "section": "3 Typical model",
-    "text": "3 Typical model\nA simplified actuator model can be written as: [ J + b = - _{load} ]\nThis model helps explain why loop bandwidth and damping matter in servo performance."
-  },
-  {
-    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#review-questions",
-    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#review-questions",
-    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhy are cascaded loops used in motor drives?\nHow does sampling period affect closed-loop behavior?\nWhat is the practical impact of torque saturation?"
-  },
-  {
-    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html",
-    "href": "notes/02-actuation-1-motors-transmissions-torque.html",
-    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "",
-    "text": "Lecture 02 slides"
-  },
-  {
-    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#lecture-slide",
-    "href": "notes/02-actuation-1-motors-transmissions-torque.html#lecture-slide",
-    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "",
-    "text": "Lecture 02 slides"
-  },
-  {
-    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#key-ideas",
-    "href": "notes/02-actuation-1-motors-transmissions-torque.html#key-ideas",
-    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nActuators convert electrical power into controllable mechanical motion.\nTransmission choices trade output speed, torque, and backdrivability.\nContinuous torque and thermal limits often determine usable performance."
-  },
-  {
-    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#core-equations",
-    "href": "notes/02-actuation-1-motors-transmissions-torque.html#core-equations",
-    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "3 Core equations",
-    "text": "3 Core equations\n\nMotor torque: (_m = K_t i)\nBack EMF: (e = K_e _m)\nWith gear ratio (N): (_{out} N m), ({out} = _m / N)"
-  },
-  {
-    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#review-questions",
-    "href": "notes/02-actuation-1-motors-transmissions-torque.html#review-questions",
-    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhy does a higher gear ratio increase output torque but reduce speed?\nHow do efficiency losses change actuator sizing decisions?\nWhy is thermal behavior critical for repeated robotic tasks?"
-  },
-  {
-    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html",
-    "href": "notes/04-robot-modeling-1-rigid-body-motions.html",
-    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
-    "section": "",
-    "text": "Lecture slides"
-  },
-  {
-    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#lecture-slide",
-    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#lecture-slide",
-    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
-    "section": "",
-    "text": "Lecture 02 slides\n\nIn this chapter,"
-  },
-  {
-    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#key-ideas",
-    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#key-ideas",
-    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nRobot geometry is described using coordinate frames and rigid transforms.\nHomogeneous transforms unify rotation and translation into one matrix form.\nComposition order matters because matrix multiplication is not commutative."
-  },
-  {
-    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#core-representation",
-    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#core-representation",
-    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
-    "section": "3 Core representation",
-    "text": "3 Core representation\n[ T =\n\\[\\begin{bmatrix}\nR & p \\\\\n0 & 1\n\\end{bmatrix}\\]\n, R SO(3), ; T SE(3) ]"
-  },
-  {
-    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#review-questions",
-    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#review-questions",
-    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhy do we use homogeneous coordinates in robotics?\nWhat is the geometric meaning of (T_{ab} T_{bc})?\nHow do you compute (T^{-1}) efficiently from (R) and (p)?"
-  },
-  {
-    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html",
-    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html",
-    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "",
-    "text": "Lecture 06 slides"
-  },
-  {
-    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#lecture-slide",
-    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#lecture-slide",
-    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "",
-    "text": "Lecture 06 slides"
-  },
-  {
-    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#key-ideas",
-    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#key-ideas",
-    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nVelocity kinematics links joint velocity to task-space velocity.\nThe Jacobian captures local motion sensitivity at each configuration.\nInverse kinematics can be solved iteratively using Jacobian-based updates."
-  },
-  {
-    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#core-relation",
-    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#core-relation",
-    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "3 Core relation",
-    "text": "3 Core relation\n[ = J(q), J(q)^{}_{des} ]"
-  },
-  {
-    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#review-questions",
-    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#review-questions",
-    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhat does a Jacobian singularity mean physically?\nWhy is (J^) useful for redundant systems?\nHow does damping improve numerical IK near singularities?"
-  },
-  {
-    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html",
-    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html",
-    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "",
-    "text": "Lecture 08 slides"
-  },
-  {
-    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#lecture-slide",
-    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#lecture-slide",
-    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "",
-    "text": "Lecture 08 slides"
-  },
-  {
-    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#key-ideas",
-    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#key-ideas",
-    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nSimulation enables fast prototyping and reproducible testing.\nPhysics engines approximate contact, friction, and constraints numerically.\nStable simulation requires consistent integration step and model parameters."
-  },
-  {
-    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#practical-checklist",
-    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#practical-checklist",
-    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "3 Practical checklist",
-    "text": "3 Practical checklist\n\nValidate inertial and contact parameters.\nUse fixed time steps for controller benchmarking.\nCompare simulated trajectories against hardware logs."
-  },
-  {
-    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#review-questions",
-    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#review-questions",
-    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhy do contact-rich tasks diverge more in sim-to-real transfer?\nHow does step size affect stability and runtime?\nWhat metrics best indicate simulation fidelity for your task?"
-  },
-  {
-    "objectID": "notes/10-control-1-pid-and-computed-torque.html",
-    "href": "notes/10-control-1-pid-and-computed-torque.html",
-    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
-    "section": "",
-    "text": "Lecture 10 slides"
-  },
-  {
-    "objectID": "notes/10-control-1-pid-and-computed-torque.html#lecture-slide",
-    "href": "notes/10-control-1-pid-and-computed-torque.html#lecture-slide",
-    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
-    "section": "",
-    "text": "Lecture 10 slides"
-  },
-  {
-    "objectID": "notes/10-control-1-pid-and-computed-torque.html#key-ideas",
-    "href": "notes/10-control-1-pid-and-computed-torque.html#key-ideas",
-    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nComputed torque uses robot dynamics for model-based tracking control.\nFeedback linearization can simplify nonlinear joint dynamics.\nPractical robustness still depends on parameter uncertainty and disturbances."
-  },
-  {
-    "objectID": "notes/10-control-1-pid-and-computed-torque.html#control-law-sketch",
-    "href": "notes/10-control-1-pid-and-computed-torque.html#control-law-sketch",
-    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
-    "section": "3 Control law sketch",
-    "text": "3 Control law sketch\n[ = M(q)(_{des} + K_d + K_p e) + C(q,) + g(q) ]\nThis form combines model-based feedforward and error feedback for trajectory tracking."
-  },
-  {
-    "objectID": "notes/10-control-1-pid-and-computed-torque.html#review-questions",
-    "href": "notes/10-control-1-pid-and-computed-torque.html#review-questions",
-    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhy does computed torque rely on an accurate dynamics model?\nWhat happens when (M, C, g) are estimated poorly?\nHow can robust or adaptive terms improve stability in practice?"
-  },
-  {
-    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html",
-    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html",
-    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
-    "section": "",
-    "text": "Lecture 12 slides"
-  },
-  {
-    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#lecture-slide",
-    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#lecture-slide",
-    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
-    "section": "",
-    "text": "Lecture 12 slides"
-  },
-  {
-    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#key-ideas",
-    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#key-ideas",
-    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
-    "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nReactive control uses local information for fast online responses.\nPotential and velocity fields offer interpretable geometric behavior.\nMPC handles constraints explicitly by solving repeated finite-horizon optimization."
-  },
-  {
-    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#typical-mpc-objective",
-    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#typical-mpc-objective",
-    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
-    "section": "3 Typical MPC objective",
-    "text": "3 Typical MPC objective\n[ {u{0:H-1}} {k=0}^{H} |x_k - x_k{ref}|_Q2 + {k=0}{H-1}|u_k|_R2 ]\nsubject to system dynamics and safety constraints."
-  },
-  {
-    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#review-questions",
-    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#review-questions",
-    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
-    "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhat failure modes appear in naive potential fields?\nWhy is MPC computationally heavier than PID?\nWhich tasks benefit most from constraint-aware control?"
+    "text": "4 Review questions\n\nWhich robotics tasks fit imitation learning better than RL?\nWhy is sim-to-real transfer difficult for learned policies?\nHow do we evaluate safety when deploying learned controllers?"
   },
   {
     "objectID": "notes/14-perception-2-camera-modeling-calibration.html",
@@ -1085,151 +91,207 @@
     "text": "4 Review questions\n\nWhat is the difference between intrinsic and extrinsic parameters?\nHow does poor calibration affect 3D perception pipelines?\nWhy are multiple views needed for robust calibration?"
   },
   {
-    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html",
-    "href": "notes/16-integrated-robotics-from-perception-to-action.html",
-    "title": "Lecture 16 Notes: Introduction to Robot Learning",
+    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html",
+    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html",
+    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
     "section": "",
-    "text": "Lecture 16 slides"
+    "text": "Lecture 12 slides"
   },
   {
-    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#lecture-slide",
-    "href": "notes/16-integrated-robotics-from-perception-to-action.html#lecture-slide",
-    "title": "Lecture 16 Notes: Introduction to Robot Learning",
+    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#lecture-slide",
+    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#lecture-slide",
+    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
     "section": "",
-    "text": "Lecture 16 slides"
+    "text": "Lecture 12 slides"
   },
   {
-    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#key-ideas",
-    "href": "notes/16-integrated-robotics-from-perception-to-action.html#key-ideas",
-    "title": "Lecture 16 Notes: Introduction to Robot Learning",
+    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#key-ideas",
+    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#key-ideas",
+    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
     "section": "2 Key ideas",
-    "text": "2 Key ideas\n\nRobot learning aims to improve behavior from data rather than only hand-crafted rules.\nSupervised, imitation, and reinforcement learning solve different robotics problems.\nData quality, safety constraints, and sample efficiency drive method choice."
+    "text": "2 Key ideas\n\nReactive control uses local information for fast online responses.\nPotential and velocity fields offer interpretable geometric behavior.\nMPC handles constraints explicitly by solving repeated finite-horizon optimization."
   },
   {
-    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#integration-pipeline",
-    "href": "notes/16-integrated-robotics-from-perception-to-action.html#integration-pipeline",
-    "title": "Lecture 16 Notes: Integrated Robotics - From Perception to Action",
-    "section": "3 Integration pipeline",
-    "text": "3 Integration pipeline\n\nPerception estimates world and robot state.\nPlanning generates feasible task and motion objectives.\nControl executes behavior with feedback under real-world constraints."
+    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#typical-mpc-objective",
+    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#typical-mpc-objective",
+    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
+    "section": "3 Typical MPC objective",
+    "text": "3 Typical MPC objective\n[ {u{0:H-1}} {k=0}^{H} |x_k - x_k{ref}|_Q2 + {k=0}{H-1}|u_k|_R2 ]\nsubject to system dynamics and safety constraints."
   },
   {
-    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#review-questions",
-    "href": "notes/16-integrated-robotics-from-perception-to-action.html#review-questions",
-    "title": "Lecture 16 Notes: Introduction to Robot Learning",
+    "objectID": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#review-questions",
+    "href": "notes/12-reactive-control-potential-fields-velocity-fields-mpc.html#review-questions",
+    "title": "Lecture 12 Notes: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
     "section": "4 Review questions",
-    "text": "4 Review questions\n\nWhich robotics tasks fit imitation learning better than RL?\nWhy is sim-to-real transfer difficult for learned policies?\nHow do we evaluate safety when deploying learned controllers?"
+    "text": "4 Review questions\n\nWhat failure modes appear in naive potential fields?\nWhy is MPC computationally heavier than PID?\nWhich tasks benefit most from constraint-aware control?"
   },
   {
-    "objectID": "notes/16-integrated-robotics-from-perception-to-action.html#learning-paradigms",
-    "href": "notes/16-integrated-robotics-from-perception-to-action.html#learning-paradigms",
-    "title": "Lecture 16 Notes: Introduction to Robot Learning",
-    "section": "3 Learning paradigms",
-    "text": "3 Learning paradigms\n\nSupervised learning: predict labels or state from data.\nImitation learning: clone expert behavior from demonstrations.\nReinforcement learning: optimize policies via reward and interaction."
+    "objectID": "notes/10-control-1-pid-and-computed-torque.html",
+    "href": "notes/10-control-1-pid-and-computed-torque.html",
+    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
+    "section": "",
+    "text": "Lecture 10 slides"
   },
   {
-    "objectID": "slides/01-introduction-to-robotics.html#what-is-an-autonomous-robot",
-    "href": "slides/01-introduction-to-robotics.html#what-is-an-autonomous-robot",
-    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "What is an autonomous robot?",
-    "text": "What is an autonomous robot?\nA practical robot system includes:\n\nMechanical body and actuation\nSensing and state estimation\nDecision making (planning and control)\nSoftware/hardware integration in the loop"
+    "objectID": "notes/10-control-1-pid-and-computed-torque.html#lecture-slide",
+    "href": "notes/10-control-1-pid-and-computed-torque.html#lecture-slide",
+    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
+    "section": "",
+    "text": "Lecture 10 slides"
   },
   {
-    "objectID": "slides/01-introduction-to-robotics.html#course-roadmap",
-    "href": "slides/01-introduction-to-robotics.html#course-roadmap",
-    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "Course roadmap",
-    "text": "Course roadmap\n\nModeling and simulation foundations\nActuation and low-level dynamics\nPlanning and control\nPerception and learning-based methods"
+    "objectID": "notes/10-control-1-pid-and-computed-torque.html#key-ideas",
+    "href": "notes/10-control-1-pid-and-computed-torque.html#key-ideas",
+    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nComputed torque uses robot dynamics for model-based tracking control.\nFeedback linearization can simplify nonlinear joint dynamics.\nPractical robustness still depends on parameter uncertainty and disturbances."
   },
   {
-    "objectID": "slides/01-introduction-to-robotics.html#summary",
-    "href": "slides/01-introduction-to-robotics.html#summary",
-    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
-    "section": "Summary",
-    "text": "Summary\n\nRobotics is a systems discipline.\nEach lecture builds one layer of a complete autonomy stack."
+    "objectID": "notes/10-control-1-pid-and-computed-torque.html#control-law-sketch",
+    "href": "notes/10-control-1-pid-and-computed-torque.html#control-law-sketch",
+    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
+    "section": "3 Control law sketch",
+    "text": "3 Control law sketch\n[ = M(q)(_{des} + K_d + K_p e) + C(q,) + g(q) ]\nThis form combines model-based feedforward and error feedback for trajectory tracking."
   },
   {
-    "objectID": "slides/02-mathematical-foundations-se3.html#coordinate-frames-and-transforms",
-    "href": "slides/02-mathematical-foundations-se3.html#coordinate-frames-and-transforms",
-    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
-    "section": "Coordinate frames and transforms",
-    "text": "Coordinate frames and transforms\n\nA frame defines position and orientation.\nA transform maps vectors from one frame to another.\nComposition order matters in chained transforms."
+    "objectID": "notes/10-control-1-pid-and-computed-torque.html#review-questions",
+    "href": "notes/10-control-1-pid-and-computed-torque.html#review-questions",
+    "title": "Lecture 10 Notes: Control I - Computed Torque Control",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhy does computed torque rely on an accurate dynamics model?\nWhat happens when (M, C, g) are estimated poorly?\nHow can robust or adaptive terms improve stability in practice?"
   },
   {
-    "objectID": "slides/02-mathematical-foundations-se3.html#core-representation",
-    "href": "slides/02-mathematical-foundations-se3.html#core-representation",
-    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
-    "section": "Core representation",
-    "text": "Core representation\n[ T =\n\\[\\begin{bmatrix}\nR & p \\\\\n0 & 1\n\\end{bmatrix}\\]\n, R SO(3), ; T SE(3) ]"
+    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html",
+    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html",
+    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "",
+    "text": "Lecture 08 slides"
   },
   {
-    "objectID": "slides/05-robot-modeling-1-kinematics.html#forward-kinematics",
-    "href": "slides/05-robot-modeling-1-kinematics.html#forward-kinematics",
-    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
-    "section": "Forward kinematics",
-    "text": "Forward kinematics\n[ x = f(q), T_{0e}(q) = {i=1}^{n} T{i-1,i}(q_i) ]\n\nInput: joint configuration (q)\nOutput: task-space pose (x)"
+    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#lecture-slide",
+    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#lecture-slide",
+    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "",
+    "text": "Lecture 08 slides"
   },
   {
-    "objectID": "slides/05-robot-modeling-1-kinematics.html#practical-notes",
-    "href": "slides/05-robot-modeling-1-kinematics.html#practical-notes",
-    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
-    "section": "Practical notes",
-    "text": "Practical notes\n\nLink dimensions and joint offsets must be calibrated.\nKinematic errors directly impact planning and control quality."
+    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#key-ideas",
+    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#key-ideas",
+    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nSimulation enables fast prototyping and reproducible testing.\nPhysics engines approximate contact, friction, and constraints numerically.\nStable simulation requires consistent integration step and model parameters."
   },
   {
-    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#differential-kinematics",
-    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#differential-kinematics",
-    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "Differential kinematics",
-    "text": "Differential kinematics\n[ = J(q) ]\n\n(J(q)): local mapping from joint to task space\nSingularities reduce directional controllability"
+    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#practical-checklist",
+    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#practical-checklist",
+    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "3 Practical checklist",
+    "text": "3 Practical checklist\n\nValidate inertial and contact parameters.\nUse fixed time steps for controller benchmarking.\nCompare simulated trajectories against hardware logs."
   },
   {
-    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#inverse-kinematics-idea",
-    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#inverse-kinematics-idea",
-    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
-    "section": "Inverse kinematics idea",
-    "text": "Inverse kinematics idea\n[ J(q)^_{des} ]\n\nPseudoinverse enables numerical IK updates.\nDamped variants improve behavior near singularity."
+    "objectID": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#review-questions",
+    "href": "notes/08-robot-simulation-modern-physics-engines-contact-dynamics.html#review-questions",
+    "title": "Lecture 08 Notes: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhy do contact-rich tasks diverge more in sim-to-real transfer?\nHow does step size affect stability and runtime?\nWhat metrics best indicate simulation fidelity for your task?"
   },
   {
-    "objectID": "slides/07-robot-modeling-3-dynamics.html#standard-equation-of-motion",
-    "href": "slides/07-robot-modeling-3-dynamics.html#standard-equation-of-motion",
-    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "Standard equation of motion",
-    "text": "Standard equation of motion\n[ M(q) + C(q,) + g(q) = ]\n\n(M(q)): inertia coupling\n(C(q,)): velocity-dependent effects\n(g(q)): gravitational load"
+    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html",
+    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html",
+    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "",
+    "text": "Lecture 06 slides"
   },
   {
-    "objectID": "slides/07-robot-modeling-3-dynamics.html#why-dynamics-matter",
-    "href": "slides/07-robot-modeling-3-dynamics.html#why-dynamics-matter",
-    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
-    "section": "Why dynamics matter",
-    "text": "Why dynamics matter\n\nInverse dynamics for feedforward control\nBetter simulation fidelity\nSafer actuator sizing"
+    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#lecture-slide",
+    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#lecture-slide",
+    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "",
+    "text": "Lecture 06 slides"
   },
   {
-    "objectID": "slides/08-robot-simulation.html#simulation-pipeline",
-    "href": "slides/08-robot-simulation.html#simulation-pipeline",
-    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "Simulation pipeline",
-    "text": "Simulation pipeline\n\nScene and robot model definition\nPhysics integration and contact solve\nSensor/actuator loop emulation\nLogging and evaluation"
+    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#key-ideas",
+    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#key-ideas",
+    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nVelocity kinematics links joint velocity to task-space velocity.\nThe Jacobian captures local motion sensitivity at each configuration.\nInverse kinematics can be solved iteratively using Jacobian-based updates."
   },
   {
-    "objectID": "slides/08-robot-simulation.html#contact-dynamics-considerations",
-    "href": "slides/08-robot-simulation.html#contact-dynamics-considerations",
-    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
-    "section": "Contact dynamics considerations",
-    "text": "Contact dynamics considerations\n\nTime step and solver iterations affect stability.\nFriction/contact parameters strongly affect behavior.\nSim-to-real mismatch must be expected and managed."
+    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#core-relation",
+    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#core-relation",
+    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "3 Core relation",
+    "text": "3 Core relation\n[ = J(q), J(q)^{}_{des} ]"
   },
   {
-    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#core-actuator-relations",
-    "href": "slides/13-actuation-1-motors-transmissions-torque.html#core-actuator-relations",
-    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "Core actuator relations",
-    "text": "Core actuator relations\n[ _m = K_t i, e = K_e _m ]\n\nTorque constant (K_t) links current to torque.\nBack-EMF limits high-speed operation."
+    "objectID": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#review-questions",
+    "href": "notes/06-robot-modeling-3-velocity-kinematics-inverse-kinematics.html#review-questions",
+    "title": "Lecture 06 Notes: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhat does a Jacobian singularity mean physically?\nWhy is (J^) useful for redundant systems?\nHow does damping improve numerical IK near singularities?"
   },
   {
-    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#transmission-effects",
-    "href": "slides/13-actuation-1-motors-transmissions-torque.html#transmission-effects",
-    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
-    "section": "Transmission effects",
-    "text": "Transmission effects\n\nHigher gear ratio increases output torque.\nEfficiency and backlash impact control quality.\nThermal constraints bound continuous performance."
+    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html",
+    "href": "notes/04-robot-modeling-1-rigid-body-motions.html",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
+    "section": "",
+    "text": "Lecture slides"
+  },
+  {
+    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#degrees-of-freedom-of-a-rigid-body",
+    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#degrees-of-freedom-of-a-rigid-body",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
+    "section": "1 Degrees of Freedom of a Rigid Body",
+    "text": "1 Degrees of Freedom of a Rigid Body"
+  },
+  {
+    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#section",
+    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#section",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
+    "section": "2 ",
+    "text": "2"
+  },
+  {
+    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html",
+    "href": "notes/02-actuation-1-motors-transmissions-torque.html",
+    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "",
+    "text": "Lecture 02 slides"
+  },
+  {
+    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#lecture-slide",
+    "href": "notes/02-actuation-1-motors-transmissions-torque.html#lecture-slide",
+    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "",
+    "text": "Lecture 02 slides"
+  },
+  {
+    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#key-ideas",
+    "href": "notes/02-actuation-1-motors-transmissions-torque.html#key-ideas",
+    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nActuators convert electrical power into controllable mechanical motion.\nTransmission choices trade output speed, torque, and backdrivability.\nContinuous torque and thermal limits often determine usable performance."
+  },
+  {
+    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#core-equations",
+    "href": "notes/02-actuation-1-motors-transmissions-torque.html#core-equations",
+    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "3 Core equations",
+    "text": "3 Core equations\n\nMotor torque: (_m = K_t i)\nBack EMF: (e = K_e _m)\nWith gear ratio (N): (_{out} N m), ({out} = _m / N)"
+  },
+  {
+    "objectID": "notes/02-actuation-1-motors-transmissions-torque.html#review-questions",
+    "href": "notes/02-actuation-1-motors-transmissions-torque.html#review-questions",
+    "title": "Lecture 02 Notes: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhy does a higher gear ratio increase output torque but reduce speed?\nHow do efficiency losses change actuator sizing decisions?\nWhy is thermal behavior critical for repeated robotic tasks?"
+  },
+  {
+    "objectID": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#learning-goals",
+    "href": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#learning-goals",
+    "title": "Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nModel basic actuator dynamics.\nUnderstand cascaded servo control loops.\nEvaluate delay, saturation, and bandwidth limits."
   },
   {
     "objectID": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#typical-low-level-architecture",
@@ -1246,46 +308,18 @@
     "text": "Practical control issues\n\nSaturation and anti-windup\nQuantization and sensor noise\nSample period and communication delay"
   },
   {
-    "objectID": "slides/09-motion-planning.html#planning-workflow",
-    "href": "slides/09-motion-planning.html#planning-workflow",
-    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
-    "section": "Planning workflow",
-    "text": "Planning workflow\n\nBuild geometry and constraints\nFind feasible path in (C)-space\nTime-parameterize into executable trajectory"
+    "objectID": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#summary",
+    "href": "slides/14-actuation-2-actuator-dynamics-low-level-control.html#summary",
+    "title": "Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control",
+    "section": "Summary",
+    "text": "Summary\n\nLow-level servo quality shapes high-level task performance.\nStable cascaded tuning is essential for reliable robots."
   },
   {
-    "objectID": "slides/09-motion-planning.html#common-methods",
-    "href": "slides/09-motion-planning.html#common-methods",
-    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
-    "section": "Common methods",
-    "text": "Common methods\n\nGraph search (A*, Dijkstra variants)\nSampling planners (PRM, RRT family)\nPost-processing (shortcutting, smoothing)"
-  },
-  {
-    "objectID": "slides/10-control-1-pid-basics.html#control-law",
-    "href": "slides/10-control-1-pid-basics.html#control-law",
-    "title": "Lecture 10: Control I - Computed Torque Control",
-    "section": "Control law",
-    "text": "Control law\n[ = M(q)(_{des} + K_d + K_p e) + C(q,) + g(q) ]\n\nDynamics compensation linearizes nominal behavior.\nFeedback terms stabilize tracking error."
-  },
-  {
-    "objectID": "slides/10-control-1-pid-basics.html#practical-concerns",
-    "href": "slides/10-control-1-pid-basics.html#practical-concerns",
-    "title": "Lecture 10: Control I - Computed Torque Control",
-    "section": "Practical concerns",
-    "text": "Practical concerns\n\nParameter uncertainty\nUnmodeled friction/contact\nSaturation and safety constraints"
-  },
-  {
-    "objectID": "slides/11-control-2-operational-space-control.html#task-space-relations",
-    "href": "slides/11-control-2-operational-space-control.html#task-space-relations",
-    "title": "Lecture 11: Control II - Operational-Space Control",
-    "section": "Task-space relations",
-    "text": "Task-space relations\n[ = J(q), = J(q)^T F ]\n\nEnd-effector objective is expressed in Cartesian space.\nJoint torques are generated through Jacobian transpose mapping."
-  },
-  {
-    "objectID": "slides/11-control-2-operational-space-control.html#redundancy-handling",
-    "href": "slides/11-control-2-operational-space-control.html#redundancy-handling",
-    "title": "Lecture 11: Control II - Operational-Space Control",
-    "section": "Redundancy handling",
-    "text": "Redundancy handling\n\nPrimary task: end-effector tracking\nSecondary task: posture/joint-limit avoidance\nNull-space projection preserves priority"
+    "objectID": "slides/12-reactive-control.html#learning-goals",
+    "href": "slides/12-reactive-control.html#learning-goals",
+    "title": "Lecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nCompare reactive control strategies for online response.\nUnderstand potential-field and velocity-field design.\nSee how MPC handles constraints explicitly."
   },
   {
     "objectID": "slides/12-reactive-control.html#reactive-methods",
@@ -1302,18 +336,102 @@
     "text": "MPC template\n[ {u{0:H-1}} _{k=0}{H}|x_k-x_k{ref}|Q^2 + {k=0}{H-1}|u_k|_R2 ]\nsubject to dynamics and safety constraints."
   },
   {
-    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#estimation-model",
-    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#estimation-model",
-    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "Estimation model",
-    "text": "Estimation model\n[ x_k = f(x_{k-1},u_{k-1}) + w_k, z_k = h(x_k) + v_k ]\n\n(w_k): process noise\n(v_k): measurement noise"
+    "objectID": "slides/12-reactive-control.html#summary",
+    "href": "slides/12-reactive-control.html#summary",
+    "title": "Lecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control",
+    "section": "Summary",
+    "text": "Summary\n\nReactive control is fast and practical.\nConstraint handling is key for safe robot deployment."
   },
   {
-    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#typical-pipeline",
-    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#typical-pipeline",
-    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
-    "section": "Typical pipeline",
-    "text": "Typical pipeline\n\nPrediction from dynamics\nSensor update from observations\nUncertainty-aware output to planning/control"
+    "objectID": "slides/10-control-1-pid-basics.html#learning-goals",
+    "href": "slides/10-control-1-pid-basics.html#learning-goals",
+    "title": "Lecture 10: Control I - Computed Torque Control",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nUnderstand model-based control for robot joints.\nDerive computed torque control from manipulator dynamics.\nAnalyze effects of model mismatch on tracking."
+  },
+  {
+    "objectID": "slides/10-control-1-pid-basics.html#control-law",
+    "href": "slides/10-control-1-pid-basics.html#control-law",
+    "title": "Lecture 10: Control I - Computed Torque Control",
+    "section": "Control law",
+    "text": "Control law\n[ = M(q)(_{des} + K_d + K_p e) + C(q,) + g(q) ]\n\nDynamics compensation linearizes nominal behavior.\nFeedback terms stabilize tracking error."
+  },
+  {
+    "objectID": "slides/10-control-1-pid-basics.html#practical-concerns",
+    "href": "slides/10-control-1-pid-basics.html#practical-concerns",
+    "title": "Lecture 10: Control I - Computed Torque Control",
+    "section": "Practical concerns",
+    "text": "Practical concerns\n\nParameter uncertainty\nUnmodeled friction/contact\nSaturation and safety constraints"
+  },
+  {
+    "objectID": "slides/10-control-1-pid-basics.html#summary",
+    "href": "slides/10-control-1-pid-basics.html#summary",
+    "title": "Lecture 10: Control I - Computed Torque Control",
+    "section": "Summary",
+    "text": "Summary\n\nComputed torque can yield high-accuracy tracking.\nRobustness depends on model quality and gain design."
+  },
+  {
+    "objectID": "slides/08-robot-simulation.html#learning-goals",
+    "href": "slides/08-robot-simulation.html#learning-goals",
+    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nUnderstand the simulation stack for robotics.\nCompare common physics engines and assumptions.\nAnalyze contact modeling and numerical stability."
+  },
+  {
+    "objectID": "slides/08-robot-simulation.html#simulation-pipeline",
+    "href": "slides/08-robot-simulation.html#simulation-pipeline",
+    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "Simulation pipeline",
+    "text": "Simulation pipeline\n\nScene and robot model definition\nPhysics integration and contact solve\nSensor/actuator loop emulation\nLogging and evaluation"
+  },
+  {
+    "objectID": "slides/08-robot-simulation.html#contact-dynamics-considerations",
+    "href": "slides/08-robot-simulation.html#contact-dynamics-considerations",
+    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "Contact dynamics considerations",
+    "text": "Contact dynamics considerations\n\nTime step and solver iterations affect stability.\nFriction/contact parameters strongly affect behavior.\nSim-to-real mismatch must be expected and managed."
+  },
+  {
+    "objectID": "slides/08-robot-simulation.html#summary",
+    "href": "slides/08-robot-simulation.html#summary",
+    "title": "Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics",
+    "section": "Summary",
+    "text": "Summary\n\nSimulation accelerates iteration before hardware tests.\nContact fidelity is critical for manipulation tasks."
+  },
+  {
+    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#learning-goals",
+    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#learning-goals",
+    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nRelate joint velocities to task-space velocities.\nDerive and interpret manipulator Jacobians.\nSolve inverse kinematics iteratively."
+  },
+  {
+    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#differential-kinematics",
+    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#differential-kinematics",
+    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "Differential kinematics",
+    "text": "Differential kinematics\n[ = J(q) ]\n\n(J(q)): local mapping from joint to task space\nSingularities reduce directional controllability"
+  },
+  {
+    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#inverse-kinematics-idea",
+    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#inverse-kinematics-idea",
+    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "Inverse kinematics idea",
+    "text": "Inverse kinematics idea\n[ J(q)^_{des} ]\n\nPseudoinverse enables numerical IK updates.\nDamped variants improve behavior near singularity."
+  },
+  {
+    "objectID": "slides/06-robot-modeling-2-velocity-jacobians.html#summary",
+    "href": "slides/06-robot-modeling-2-velocity-jacobians.html#summary",
+    "title": "Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics",
+    "section": "Summary",
+    "text": "Summary\n\nJacobians connect geometry and motion.\nIK turns task goals into executable joint commands."
+  },
+  {
+    "objectID": "slides/04-perception-2-rgbd-object-pose-estimation.html#learning-goals",
+    "href": "slides/04-perception-2-rgbd-object-pose-estimation.html#learning-goals",
+    "title": "Lecture 14: Perception II - Camera Modeling and Calibration",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nUnderstand camera geometry for robotics.\nDistinguish intrinsic and extrinsic parameters.\nPerform and validate camera calibration."
   },
   {
     "objectID": "slides/04-perception-2-rgbd-object-pose-estimation.html#camera-projection-model",
@@ -1330,25 +448,53 @@
     "text": "Calibration workflow\n\nCollect target images from diverse viewpoints\nSolve for (K, R, t) and distortion terms\nValidate via reprojection error"
   },
   {
-    "objectID": "slides/16-integrated-robotic-systems.html#learning-based-control-paradigms",
-    "href": "slides/16-integrated-robotic-systems.html#learning-based-control-paradigms",
-    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
-    "section": "Learning-based control paradigms",
-    "text": "Learning-based control paradigms\n\nBehavior cloning from demonstrations\nReinforcement learning from reward-driven interaction\nHybrid model-based plus learned residual approaches"
+    "objectID": "slides/04-perception-2-rgbd-object-pose-estimation.html#summary",
+    "href": "slides/04-perception-2-rgbd-object-pose-estimation.html#summary",
+    "title": "Lecture 14: Perception II - Camera Modeling and Calibration",
+    "section": "Summary",
+    "text": "Summary\n\nCalibration is foundational for 3D perception.\nBetter calibration yields more reliable downstream control."
   },
   {
-    "objectID": "slides/16-integrated-robotic-systems.html#deployment-considerations",
-    "href": "slides/16-integrated-robotic-systems.html#deployment-considerations",
-    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
-    "section": "Deployment considerations",
-    "text": "Deployment considerations\n\nData quality and coverage\nSafety constraints and fallback policies\nSim-to-real transfer and domain randomization"
+    "objectID": "slides/02-mathematical-foundations-se3.html#learning-goals",
+    "href": "slides/02-mathematical-foundations-se3.html#learning-goals",
+    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nDescribe rigid-body motion in 2D and 3D.\nUse homogeneous transforms for frame-to-frame mapping.\nUnderstand the role of SE(3) in robotics."
+  },
+  {
+    "objectID": "slides/02-mathematical-foundations-se3.html#coordinate-frames-and-transforms",
+    "href": "slides/02-mathematical-foundations-se3.html#coordinate-frames-and-transforms",
+    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
+    "section": "Coordinate frames and transforms",
+    "text": "Coordinate frames and transforms\n\nA frame defines position and orientation.\nA transform maps vectors from one frame to another.\nComposition order matters in chained transforms."
+  },
+  {
+    "objectID": "slides/02-mathematical-foundations-se3.html#core-representation",
+    "href": "slides/02-mathematical-foundations-se3.html#core-representation",
+    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
+    "section": "Core representation",
+    "text": "Core representation\n[ T =\n\\[\\begin{bmatrix}\nR & p \\\\\n0 & 1\n\\end{bmatrix}\\]\n, R SO(3), ; T SE(3) ]"
+  },
+  {
+    "objectID": "slides/02-mathematical-foundations-se3.html#summary",
+    "href": "slides/02-mathematical-foundations-se3.html#summary",
+    "title": "Lecture 02: Robot Modeling I - Rigid Body Motions",
+    "section": "Summary",
+    "text": "Summary\n\nRigid-body transforms are the geometric language of robotics.\nSE(3) is the foundation for kinematics, perception, and control."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Robotics",
+    "section": "",
+    "text": "Robotics combines mechanics, electronics, and computation to build autonomous physical systems. This course introduces the core ideas behind modeling, simulation, planning, control, and perception.\nBy the end of this course, you will be able to:\n\nUnderstand the fundamentals of robot simulation (Left: MuJoCo, Right: IsaacLab)\nVideo Video\nUnderstand a complete perception-to-action pipeline, providing the foundation to build real-world robotic systems later\nVideo Video Video Video"
   },
   {
     "objectID": "index.html#overview",
     "href": "index.html#overview",
     "title": "Introduction to Robotics",
     "section": "",
-    "text": "Robotics combines mechanics, electronics, and computation to build autonomous physical systems. This course introduces the core ideas behind modeling, simulation, planning, control, and perception."
+    "text": "Robotics combines mechanics, electronics, and computation to build autonomous physical systems. This course introduces the core ideas behind modeling, simulation, planning, control, and perception.\nBy the end of this course, you will be able to:\n\nUnderstand the fundamentals of robot simulation (Left: MuJoCo, Right: IsaacLab)\nVideo Video\nUnderstand a complete perception-to-action pipeline, providing the foundation to build real-world robotic systems later\nVideo Video Video Video"
   },
   {
     "objectID": "index.html#course-information",
@@ -1393,59 +539,472 @@
     "text": "Resources\n\nLecture Notes"
   },
   {
-    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#section",
-    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#section",
-    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
-    "section": "2 ",
-    "text": "2"
+    "objectID": "slides/01-introduction-to-robotics.html#learning-goals",
+    "href": "slides/01-introduction-to-robotics.html#learning-goals",
+    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nUnderstand the scope of modern robotics.\nConnect modeling, actuation, perception, planning, and control.\nSee how all course modules fit into one robotics pipeline."
   },
   {
-    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#degrees-of-freedom-of-a-rigid-body",
-    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#degrees-of-freedom-of-a-rigid-body",
-    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
-    "section": "1 Degrees of Freedom of a Rigid Body",
-    "text": "1 Degrees of Freedom of a Rigid Body"
+    "objectID": "slides/01-introduction-to-robotics.html#what-is-an-autonomous-robot",
+    "href": "slides/01-introduction-to-robotics.html#what-is-an-autonomous-robot",
+    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
+    "section": "What is an autonomous robot?",
+    "text": "What is an autonomous robot?\nA practical robot system includes:\n\nMechanical body and actuation\nSensing and state estimation\nDecision making (planning and control)\nSoftware/hardware integration in the loop"
   },
   {
-    "objectID": "notes/index.html#introduction",
-    "href": "notes/index.html#introduction",
+    "objectID": "slides/01-introduction-to-robotics.html#course-roadmap",
+    "href": "slides/01-introduction-to-robotics.html#course-roadmap",
+    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
+    "section": "Course roadmap",
+    "text": "Course roadmap\n\nModeling and simulation foundations\nActuation and low-level dynamics\nPlanning and control\nPerception and learning-based methods"
+  },
+  {
+    "objectID": "slides/01-introduction-to-robotics.html#summary",
+    "href": "slides/01-introduction-to-robotics.html#summary",
+    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
+    "section": "Summary",
+    "text": "Summary\n\nRobotics is a systems discipline.\nEach lecture builds one layer of a complete autonomy stack."
+  },
+  {
+    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#learning-goals",
+    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#learning-goals",
+    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nCompare sensing modalities used in robotics.\nModel process/measurement uncertainty.\nUnderstand the structure of state-estimation pipelines."
+  },
+  {
+    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#estimation-model",
+    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#estimation-model",
+    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "Estimation model",
+    "text": "Estimation model\n[ x_k = f(x_{k-1},u_{k-1}) + w_k, z_k = h(x_k) + v_k ]\n\n(w_k): process noise\n(v_k): measurement noise"
+  },
+  {
+    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#typical-pipeline",
+    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#typical-pipeline",
+    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "Typical pipeline",
+    "text": "Typical pipeline\n\nPrediction from dynamics\nSensor update from observations\nUncertainty-aware output to planning/control"
+  },
+  {
+    "objectID": "slides/03-perception-1-sensors-noise-state-estimation.html#summary",
+    "href": "slides/03-perception-1-sensors-noise-state-estimation.html#summary",
+    "title": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "Summary",
+    "text": "Summary\n\nPerception quality depends on both sensors and inference.\nUncertainty-aware estimation improves robustness."
+  },
+  {
+    "objectID": "slides/05-robot-modeling-1-kinematics.html#learning-goals",
+    "href": "slides/05-robot-modeling-1-kinematics.html#learning-goals",
+    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nMap joint variables to end-effector pose.\nBuild serial-chain transforms from link models.\nInterpret robot workspace from kinematic structure."
+  },
+  {
+    "objectID": "slides/05-robot-modeling-1-kinematics.html#forward-kinematics",
+    "href": "slides/05-robot-modeling-1-kinematics.html#forward-kinematics",
+    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
+    "section": "Forward kinematics",
+    "text": "Forward kinematics\n[ x = f(q), T_{0e}(q) = {i=1}^{n} T{i-1,i}(q_i) ]\n\nInput: joint configuration (q)\nOutput: task-space pose (x)"
+  },
+  {
+    "objectID": "slides/05-robot-modeling-1-kinematics.html#practical-notes",
+    "href": "slides/05-robot-modeling-1-kinematics.html#practical-notes",
+    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
+    "section": "Practical notes",
+    "text": "Practical notes\n\nLink dimensions and joint offsets must be calibrated.\nKinematic errors directly impact planning and control quality."
+  },
+  {
+    "objectID": "slides/05-robot-modeling-1-kinematics.html#summary",
+    "href": "slides/05-robot-modeling-1-kinematics.html#summary",
+    "title": "Lecture 03: Robot Modeling II - Forward Kinematics",
+    "section": "Summary",
+    "text": "Summary\n\nForward kinematics is the first step toward motion generation.\nIt provides the geometry required for inverse and differential methods."
+  },
+  {
+    "objectID": "slides/07-robot-modeling-3-dynamics.html#learning-goals",
+    "href": "slides/07-robot-modeling-3-dynamics.html#learning-goals",
+    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nDerive open-chain manipulator dynamics.\nInterpret inertia, Coriolis, and gravity terms.\nConnect dynamic models to simulation and control."
+  },
+  {
+    "objectID": "slides/07-robot-modeling-3-dynamics.html#standard-equation-of-motion",
+    "href": "slides/07-robot-modeling-3-dynamics.html#standard-equation-of-motion",
+    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "Standard equation of motion",
+    "text": "Standard equation of motion\n[ M(q) + C(q,) + g(q) = ]\n\n(M(q)): inertia coupling\n(C(q,)): velocity-dependent effects\n(g(q)): gravitational load"
+  },
+  {
+    "objectID": "slides/07-robot-modeling-3-dynamics.html#why-dynamics-matter",
+    "href": "slides/07-robot-modeling-3-dynamics.html#why-dynamics-matter",
+    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "Why dynamics matter",
+    "text": "Why dynamics matter\n\nInverse dynamics for feedforward control\nBetter simulation fidelity\nSafer actuator sizing"
+  },
+  {
+    "objectID": "slides/07-robot-modeling-3-dynamics.html#summary",
+    "href": "slides/07-robot-modeling-3-dynamics.html#summary",
+    "title": "Lecture 05: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "Summary",
+    "text": "Summary\n\nDynamics tells us how torque becomes motion.\nAccurate models improve tracking and robustness."
+  },
+  {
+    "objectID": "slides/09-motion-planning.html#learning-goals",
+    "href": "slides/09-motion-planning.html#learning-goals",
+    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nFormulate motion planning in configuration space.\nCompare search-based and sampling-based methods.\nDistinguish path planning from trajectory generation."
+  },
+  {
+    "objectID": "slides/09-motion-planning.html#planning-workflow",
+    "href": "slides/09-motion-planning.html#planning-workflow",
+    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
+    "section": "Planning workflow",
+    "text": "Planning workflow\n\nBuild geometry and constraints\nFind feasible path in (C)-space\nTime-parameterize into executable trajectory"
+  },
+  {
+    "objectID": "slides/09-motion-planning.html#common-methods",
+    "href": "slides/09-motion-planning.html#common-methods",
+    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
+    "section": "Common methods",
+    "text": "Common methods\n\nGraph search (A*, Dijkstra variants)\nSampling planners (PRM, RRT family)\nPost-processing (shortcutting, smoothing)"
+  },
+  {
+    "objectID": "slides/09-motion-planning.html#summary",
+    "href": "slides/09-motion-planning.html#summary",
+    "title": "Lecture 09: Planning - Trajectory Generation and Motion Planning",
+    "section": "Summary",
+    "text": "Summary\n\nPlanning bridges goals and physical execution.\nRepresentation and constraints determine planner behavior."
+  },
+  {
+    "objectID": "slides/11-control-2-operational-space-control.html#learning-goals",
+    "href": "slides/11-control-2-operational-space-control.html#learning-goals",
+    "title": "Lecture 11: Control II - Operational-Space Control",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nControl motion directly in task space.\nUse Jacobian mappings between force and torque.\nHandle redundancy with null-space objectives."
+  },
+  {
+    "objectID": "slides/11-control-2-operational-space-control.html#task-space-relations",
+    "href": "slides/11-control-2-operational-space-control.html#task-space-relations",
+    "title": "Lecture 11: Control II - Operational-Space Control",
+    "section": "Task-space relations",
+    "text": "Task-space relations\n[ = J(q), = J(q)^T F ]\n\nEnd-effector objective is expressed in Cartesian space.\nJoint torques are generated through Jacobian transpose mapping."
+  },
+  {
+    "objectID": "slides/11-control-2-operational-space-control.html#redundancy-handling",
+    "href": "slides/11-control-2-operational-space-control.html#redundancy-handling",
+    "title": "Lecture 11: Control II - Operational-Space Control",
+    "section": "Redundancy handling",
+    "text": "Redundancy handling\n\nPrimary task: end-effector tracking\nSecondary task: posture/joint-limit avoidance\nNull-space projection preserves priority"
+  },
+  {
+    "objectID": "slides/11-control-2-operational-space-control.html#summary",
+    "href": "slides/11-control-2-operational-space-control.html#summary",
+    "title": "Lecture 11: Control II - Operational-Space Control",
+    "section": "Summary",
+    "text": "Summary\n\nOperational-space control aligns control with task goals.\nRedundancy can be exploited for safer, smoother behavior."
+  },
+  {
+    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#learning-goals",
+    "href": "slides/13-actuation-1-motors-transmissions-torque.html#learning-goals",
+    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nExplain how electric motors generate torque.\nUnderstand gear/transmission trade-offs.\nConnect actuator sizing to robot task demands."
+  },
+  {
+    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#core-actuator-relations",
+    "href": "slides/13-actuation-1-motors-transmissions-torque.html#core-actuator-relations",
+    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "Core actuator relations",
+    "text": "Core actuator relations\n[ _m = K_t i, e = K_e _m ]\n\nTorque constant (K_t) links current to torque.\nBack-EMF limits high-speed operation."
+  },
+  {
+    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#transmission-effects",
+    "href": "slides/13-actuation-1-motors-transmissions-torque.html#transmission-effects",
+    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "Transmission effects",
+    "text": "Transmission effects\n\nHigher gear ratio increases output torque.\nEfficiency and backlash impact control quality.\nThermal constraints bound continuous performance."
+  },
+  {
+    "objectID": "slides/13-actuation-1-motors-transmissions-torque.html#summary",
+    "href": "slides/13-actuation-1-motors-transmissions-torque.html#summary",
+    "title": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation",
+    "section": "Summary",
+    "text": "Summary\n\nActuation sets physical limits of robot behavior.\nElectrical, mechanical, and thermal design must be co-optimized."
+  },
+  {
+    "objectID": "slides/16-integrated-robotic-systems.html#learning-goals",
+    "href": "slides/16-integrated-robotic-systems.html#learning-goals",
+    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nUnderstand why learning is used in robot control.\nCompare imitation learning and reinforcement learning.\nIdentify practical barriers for real-world deployment."
+  },
+  {
+    "objectID": "slides/16-integrated-robotic-systems.html#learning-based-control-paradigms",
+    "href": "slides/16-integrated-robotic-systems.html#learning-based-control-paradigms",
+    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
+    "section": "Learning-based control paradigms",
+    "text": "Learning-based control paradigms\n\nBehavior cloning from demonstrations\nReinforcement learning from reward-driven interaction\nHybrid model-based plus learned residual approaches"
+  },
+  {
+    "objectID": "slides/16-integrated-robotic-systems.html#deployment-considerations",
+    "href": "slides/16-integrated-robotic-systems.html#deployment-considerations",
+    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
+    "section": "Deployment considerations",
+    "text": "Deployment considerations\n\nData quality and coverage\nSafety constraints and fallback policies\nSim-to-real transfer and domain randomization"
+  },
+  {
+    "objectID": "slides/16-integrated-robotic-systems.html#summary",
+    "href": "slides/16-integrated-robotic-systems.html#summary",
+    "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
+    "section": "Summary",
+    "text": "Summary\n\nLearning can reduce manual controller engineering.\nRobustness, safety, and sample efficiency remain core challenges."
+  },
+  {
+    "objectID": "notes/01-introduction-to-robotics.html",
+    "href": "notes/01-introduction-to-robotics.html",
+    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
+    "section": "",
+    "text": "Definition 1 (Robot)  A robot is a physically embodied, programmable system that:      1. acquires information from its environment through sensors,      2. computes or plans desired actions, and      3. executes those actions through actuators to achieve specified task objectives.\n\n\n\n\n\n\n\n\n\n\n\nDefinition 2 (Articulated Robot)  An articulated robot is a robot composed of rigid links connected by joints."
+  },
+  {
+    "objectID": "notes/01-introduction-to-robotics.html#what-is-a-robot",
+    "href": "notes/01-introduction-to-robotics.html#what-is-a-robot",
+    "title": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems",
+    "section": "",
+    "text": "Definition 1 (Robot)  A robot is a physically embodied, programmable system that:      1. acquires information from its environment through sensors,      2. computes or plans desired actions, and      3. executes those actions through actuators to achieve specified task objectives.\n\n\n\n\n\n\n\n\n\n\n\nDefinition 2 (Articulated Robot)  An articulated robot is a robot composed of rigid links connected by joints."
+  },
+  {
+    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html",
+    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html",
+    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
+    "section": "",
+    "text": "Lecture 03 slides"
+  },
+  {
+    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#lecture-slide",
+    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#lecture-slide",
+    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
+    "section": "",
+    "text": "Lecture 03 slides"
+  },
+  {
+    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#key-ideas",
+    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#key-ideas",
+    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nLow-level control is usually implemented as cascaded current, velocity, and position loops.\nReal actuators have delay, saturation, friction, and finite sampling effects.\nStability margins depend on both plant dynamics and controller timing."
+  },
+  {
+    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#typical-model",
+    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#typical-model",
+    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
+    "section": "3 Typical model",
+    "text": "3 Typical model\nA simplified actuator model can be written as: [ J + b = - _{load} ]\nThis model helps explain why loop bandwidth and damping matter in servo performance."
+  },
+  {
+    "objectID": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#review-questions",
+    "href": "notes/03-actuation-2-actuator-dynamics-low-level-control.html#review-questions",
+    "title": "Lecture 03 Notes: Actuation II - Actuator Dynamics and Low-Level Control",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhy are cascaded loops used in motor drives?\nHow does sampling period affect closed-loop behavior?\nWhat is the practical impact of torque saturation?"
+  },
+  {
+    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html",
+    "href": "notes/05-robot-modeling-2-forward-kinematics.html",
+    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
+    "section": "",
+    "text": "Lecture 05 slides"
+  },
+  {
+    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#lecture-slide",
+    "href": "notes/05-robot-modeling-2-forward-kinematics.html#lecture-slide",
+    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
+    "section": "",
+    "text": "Lecture 05 slides"
+  },
+  {
+    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#key-ideas",
+    "href": "notes/05-robot-modeling-2-forward-kinematics.html#key-ideas",
+    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nForward kinematics maps joint configuration (q) to end-effector pose (x).\nKinematic chains are modeled by multiplying link-by-link transforms.\nWorkspace limits emerge from joint range and link geometry."
+  },
+  {
+    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#core-relation",
+    "href": "notes/05-robot-modeling-2-forward-kinematics.html#core-relation",
+    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
+    "section": "3 Core relation",
+    "text": "3 Core relation\n[ x = f(q), T_{0e}(q) = T_{01}(q_1) T_{12}(q_2) T_{(n-1)n}(q_n) ]"
+  },
+  {
+    "objectID": "notes/05-robot-modeling-2-forward-kinematics.html#review-questions",
+    "href": "notes/05-robot-modeling-2-forward-kinematics.html#review-questions",
+    "title": "Lecture 05 Notes: Robot Modeling II - Forward Kinematics",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhat information is needed to compute forward kinematics?\nHow does joint offset calibration affect (f(q))?\nWhy can different robots have similar reachable workspaces?"
+  },
+  {
+    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html",
+    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html",
+    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "",
+    "text": "Lecture 07 slides"
+  },
+  {
+    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#lecture-slide",
+    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#lecture-slide",
+    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "",
+    "text": "Lecture 07 slides"
+  },
+  {
+    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#key-ideas",
+    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#key-ideas",
+    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nDynamics explains how torques produce acceleration and motion.\nOpen-chain manipulators are commonly modeled with (M, C, g) terms.\nAccurate dynamic models improve simulation and model-based control."
+  },
+  {
+    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#standard-manipulator-equation",
+    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#standard-manipulator-equation",
+    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "3 Standard manipulator equation",
+    "text": "3 Standard manipulator equation\n[ M(q) + C(q,) + g(q) = ]"
+  },
+  {
+    "objectID": "notes/07-robot-modeling-4-dynamics-open-chains.html#review-questions",
+    "href": "notes/07-robot-modeling-4-dynamics-open-chains.html#review-questions",
+    "title": "Lecture 07 Notes: Robot Modeling IV - Dynamics of Open Chains",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhat role does the mass matrix (M(q)) play?\nWhy are Coriolis terms coupled with velocity?\nWhen can friction and unmodeled effects dominate predictions?"
+  },
+  {
+    "objectID": "notes/09-planning-trajectory-generation-motion-planning.html",
+    "href": "notes/09-planning-trajectory-generation-motion-planning.html",
+    "title": "Planning and Control I - Trajectory Generation and Computed Torque Control",
+    "section": "",
+    "text": "A Path is a purely geometric description of the sequence of robot configurations. It can be denoted by \\(\\theta(s)\\) that maps a scalar parameter \\(s\\), assumed to be \\(0\\) at the start and \\(1\\) at the end, to a point in the robot’s configuration space \\(\\Theta\\),\n\\[\n\\theta : [0,1] \\mapsto \\Theta.\n\\] As \\(s\\) increases from \\(0\\) to \\(1\\), the robot moves along the path.\n\n\n\n\n\n\n\nExample 1 (Sweep of (s) in Configuration Space (Path of 2D Plannar Robot Arm))  Consider a 2D plannar robot arm with two links – where the first link length is \\(L_1=1\\) and the second link length is \\(L_2=0.8\\) –, with a configuration \\(\\theta \\in \\Theta = [0, 2\\pi]^2\\), and a path \\[\n\\theta(s)=\n\\begin{bmatrix}\n\\theta_1(s)\\\\\n\\theta_2(s)\n\\end{bmatrix}=\n\\begin{bmatrix}\n2 \\pi s^2\\\\\n2 \\pi s\n\\end{bmatrix}, \\quad s\\in[0,1].\n\\] This path can be visualized as follows.\n\n\nShow Python code\nimport numpy as np\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\n# Parameter on the line segment [0, 1]\ns_grid = np.linspace(0.0, 1.0, 101)\n\n# Arbitrary curve theta(s) = [theta1(s), theta2(s)]^T\ntheta1 = 2 * np.pi * s_grid**2\ntheta2 = 2 * np.pi * s_grid\n\n# 2-link planar arm lengths\nL1, L2 = 1.0, 0.8\n\ndef arm_points(t1, t2):\n    x0, y0 = 0.0, 0.0\n    x1, y1 = L1 * np.cos(t1), L1 * np.sin(t1)\n    x2 = x1 + L2 * np.cos(t1 + t2)\n    y2 = y1 + L2 * np.sin(t1 + t2)\n    return [x0, x1, x2], [y0, y1, y2]\n\n# Precompute end-effector trajectory\nx1_all = L1 * np.cos(theta1)\ny1_all = L1 * np.sin(theta1)\nx2_all = x1_all + L2 * np.cos(theta1 + theta2)\ny2_all = y1_all + L2 * np.sin(theta1 + theta2)\n\n# Initial state\nt10, t20 = theta1[0], theta2[0]\nx_arm0, y_arm0 = arm_points(t10, t20)\n\nfig = make_subplots(\n    rows=1,\n    cols=3,\n    subplot_titles=(\n        \"Line segment s in [0, 1]\",\n        \"Curve θ(s) in Θ\",\n        \"2D planar arm\",\n    ),\n    horizontal_spacing=0.10,\n)\n\n# (Left) line segment and moving marker\nfig.add_trace(\n    go.Scatter(x=[0, 1], y=[0, 0], \n    mode=\"lines\", line=dict(color=\"black\", width=3), showlegend=False),\n    row=1, col=1,\n)\nfig.add_trace(\n    go.Scatter(x=[s_grid[0]], y=[0], \n    mode=\"markers\", marker=dict(color=\"crimson\", size=11), showlegend=False),\n    row=1, col=1,\n)\n\n# (Middle) curve in Theta-space and moving point\nfig.add_trace(\n    go.Scatter(x=theta1, y=theta2, \n    mode=\"lines\", line=dict(color=\"gray\", width=2), showlegend=False),\n    row=1, col=2,\n)\nfig.add_trace(\n    go.Scatter(x=[theta1[0]], y=[theta2[0]], \n    mode=\"markers\", marker=dict(color=\"crimson\", size=11), showlegend=False),\n    row=1, col=2,\n)\n\n# (Right) end-effector path and moving arm\nfig.add_trace(\n    go.Scatter(\n        x=x2_all,\n        y=y2_all,\n        mode=\"lines\",\n        line=dict(color=\"gray\", width=2, dash=\"dash\"),\n        name=\"end-effector path\",\n        showlegend=False,\n    ),\n    row=1, col=3,\n)\nfig.add_trace(\n    go.Scatter(\n        x=x_arm0,\n        y=y_arm0,\n        mode=\"lines+markers\",\n        line=dict(color=\"#1f77b4\", width=4),\n        marker=dict(color=[\"black\", \"#1f77b4\", \"crimson\"], size=[8, 9, 10]),\n        showlegend=False,\n    ),\n    row=1, col=3,\n)\n\n# Frames for slider animation\nframes = []\nfor i, sv in enumerate(s_grid):\n    t1, t2 = theta1[i], theta2[i]\n    x_arm, y_arm = arm_points(t1, t2)\n    frames.append(\n        go.Frame(\n            name=f\"{sv:.2f}\",\n            data=[\n                go.Scatter(x=[sv], y=[0]),          # left moving marker (trace index 1)\n                go.Scatter(x=[t1], y=[t2]),         # middle moving marker (trace index 3)\n                go.Scatter(x=x_arm, y=y_arm),       # right arm (trace index 5)\n            ],\n            traces=[1, 3, 5],\n        )\n    )\nfig.frames = frames\n\n# Slider UI\nsteps = [\n    dict(\n        method=\"animate\",\n        args=[\n            [f\"{sv:.2f}\"],\n            dict(mode=\"immediate\", \n            frame=dict(duration=0, redraw=True), \n            transition=dict(duration=0)),\n        ],\n        label=f\"{sv:.2f}\",\n    )\n    for sv in s_grid\n]\n\nfig.update_layout(\n    sliders=[\n        dict(\n            active=0,\n            steps=steps,\n            x=0.12,\n            y=-0.12,\n            len=0.78,\n            currentvalue=dict(prefix=\"s = \"),\n        )\n    ],\n    margin=dict(l=30, r=30, t=60, b=110),\n)\n\n# Axes formatting\nfig.update_xaxes(range=[-0.05, 1.05], title_text=\"s\", row=1, col=1, zeroline=False)\nfig.update_yaxes(range=[-0.2, 0.2], showticklabels=False, \nrow=1, col=1, zeroline=False, scaleratio=1)\n\nfig.update_xaxes(title_text=\"θ₁\", row=1, col=2)\nfig.update_yaxes(title_text=\"θ₂\", row=1, col=2, scaleanchor=\"x2\", scaleratio=1)\n\nreach = L1 + L2\nfig.update_xaxes(range=[-reach - 0.2, reach + 0.2], row=1, col=3)\nfig.update_yaxes(range=[-reach - 0.2, reach + 0.2], row=1, col=3, \nscaleanchor=\"x3\", scaleratio=1)\n\nfig.show()"
+  },
+  {
+    "objectID": "notes/09-planning-trajectory-generation-motion-planning.html#trajectory",
+    "href": "notes/09-planning-trajectory-generation-motion-planning.html#trajectory",
+    "title": "Planning and Control I - Trajectory Generation and Computed Torque Control",
+    "section": "",
+    "text": "A Path is a purely geometric description of the sequence of robot configurations. It can be denoted by \\(\\theta(s)\\) that maps a scalar parameter \\(s\\), assumed to be \\(0\\) at the start and \\(1\\) at the end, to a point in the robot’s configuration space \\(\\Theta\\),\n\\[\n\\theta : [0,1] \\mapsto \\Theta.\n\\] As \\(s\\) increases from \\(0\\) to \\(1\\), the robot moves along the path.\n\n\n\n\n\n\n\nExample 1 (Sweep of (s) in Configuration Space (Path of 2D Plannar Robot Arm))  Consider a 2D plannar robot arm with two links – where the first link length is \\(L_1=1\\) and the second link length is \\(L_2=0.8\\) –, with a configuration \\(\\theta \\in \\Theta = [0, 2\\pi]^2\\), and a path \\[\n\\theta(s)=\n\\begin{bmatrix}\n\\theta_1(s)\\\\\n\\theta_2(s)\n\\end{bmatrix}=\n\\begin{bmatrix}\n2 \\pi s^2\\\\\n2 \\pi s\n\\end{bmatrix}, \\quad s\\in[0,1].\n\\] This path can be visualized as follows.\n\n\nShow Python code\nimport numpy as np\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\n# Parameter on the line segment [0, 1]\ns_grid = np.linspace(0.0, 1.0, 101)\n\n# Arbitrary curve theta(s) = [theta1(s), theta2(s)]^T\ntheta1 = 2 * np.pi * s_grid**2\ntheta2 = 2 * np.pi * s_grid\n\n# 2-link planar arm lengths\nL1, L2 = 1.0, 0.8\n\ndef arm_points(t1, t2):\n    x0, y0 = 0.0, 0.0\n    x1, y1 = L1 * np.cos(t1), L1 * np.sin(t1)\n    x2 = x1 + L2 * np.cos(t1 + t2)\n    y2 = y1 + L2 * np.sin(t1 + t2)\n    return [x0, x1, x2], [y0, y1, y2]\n\n# Precompute end-effector trajectory\nx1_all = L1 * np.cos(theta1)\ny1_all = L1 * np.sin(theta1)\nx2_all = x1_all + L2 * np.cos(theta1 + theta2)\ny2_all = y1_all + L2 * np.sin(theta1 + theta2)\n\n# Initial state\nt10, t20 = theta1[0], theta2[0]\nx_arm0, y_arm0 = arm_points(t10, t20)\n\nfig = make_subplots(\n    rows=1,\n    cols=3,\n    subplot_titles=(\n        \"Line segment s in [0, 1]\",\n        \"Curve θ(s) in Θ\",\n        \"2D planar arm\",\n    ),\n    horizontal_spacing=0.10,\n)\n\n# (Left) line segment and moving marker\nfig.add_trace(\n    go.Scatter(x=[0, 1], y=[0, 0], \n    mode=\"lines\", line=dict(color=\"black\", width=3), showlegend=False),\n    row=1, col=1,\n)\nfig.add_trace(\n    go.Scatter(x=[s_grid[0]], y=[0], \n    mode=\"markers\", marker=dict(color=\"crimson\", size=11), showlegend=False),\n    row=1, col=1,\n)\n\n# (Middle) curve in Theta-space and moving point\nfig.add_trace(\n    go.Scatter(x=theta1, y=theta2, \n    mode=\"lines\", line=dict(color=\"gray\", width=2), showlegend=False),\n    row=1, col=2,\n)\nfig.add_trace(\n    go.Scatter(x=[theta1[0]], y=[theta2[0]], \n    mode=\"markers\", marker=dict(color=\"crimson\", size=11), showlegend=False),\n    row=1, col=2,\n)\n\n# (Right) end-effector path and moving arm\nfig.add_trace(\n    go.Scatter(\n        x=x2_all,\n        y=y2_all,\n        mode=\"lines\",\n        line=dict(color=\"gray\", width=2, dash=\"dash\"),\n        name=\"end-effector path\",\n        showlegend=False,\n    ),\n    row=1, col=3,\n)\nfig.add_trace(\n    go.Scatter(\n        x=x_arm0,\n        y=y_arm0,\n        mode=\"lines+markers\",\n        line=dict(color=\"#1f77b4\", width=4),\n        marker=dict(color=[\"black\", \"#1f77b4\", \"crimson\"], size=[8, 9, 10]),\n        showlegend=False,\n    ),\n    row=1, col=3,\n)\n\n# Frames for slider animation\nframes = []\nfor i, sv in enumerate(s_grid):\n    t1, t2 = theta1[i], theta2[i]\n    x_arm, y_arm = arm_points(t1, t2)\n    frames.append(\n        go.Frame(\n            name=f\"{sv:.2f}\",\n            data=[\n                go.Scatter(x=[sv], y=[0]),          # left moving marker (trace index 1)\n                go.Scatter(x=[t1], y=[t2]),         # middle moving marker (trace index 3)\n                go.Scatter(x=x_arm, y=y_arm),       # right arm (trace index 5)\n            ],\n            traces=[1, 3, 5],\n        )\n    )\nfig.frames = frames\n\n# Slider UI\nsteps = [\n    dict(\n        method=\"animate\",\n        args=[\n            [f\"{sv:.2f}\"],\n            dict(mode=\"immediate\", \n            frame=dict(duration=0, redraw=True), \n            transition=dict(duration=0)),\n        ],\n        label=f\"{sv:.2f}\",\n    )\n    for sv in s_grid\n]\n\nfig.update_layout(\n    sliders=[\n        dict(\n            active=0,\n            steps=steps,\n            x=0.12,\n            y=-0.12,\n            len=0.78,\n            currentvalue=dict(prefix=\"s = \"),\n        )\n    ],\n    margin=dict(l=30, r=30, t=60, b=110),\n)\n\n# Axes formatting\nfig.update_xaxes(range=[-0.05, 1.05], title_text=\"s\", row=1, col=1, zeroline=False)\nfig.update_yaxes(range=[-0.2, 0.2], showticklabels=False, \nrow=1, col=1, zeroline=False, scaleratio=1)\n\nfig.update_xaxes(title_text=\"θ₁\", row=1, col=2)\nfig.update_yaxes(title_text=\"θ₂\", row=1, col=2, scaleanchor=\"x2\", scaleratio=1)\n\nreach = L1 + L2\nfig.update_xaxes(range=[-reach - 0.2, reach + 0.2], row=1, col=3)\nfig.update_yaxes(range=[-reach - 0.2, reach + 0.2], row=1, col=3, \nscaleanchor=\"x3\", scaleratio=1)\n\nfig.show()"
+  },
+  {
+    "objectID": "notes/11-control-2-operational-space-control.html",
+    "href": "notes/11-control-2-operational-space-control.html",
+    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
+    "section": "",
+    "text": "Lecture 11 slides"
+  },
+  {
+    "objectID": "notes/11-control-2-operational-space-control.html#lecture-slide",
+    "href": "notes/11-control-2-operational-space-control.html#lecture-slide",
+    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
+    "section": "",
+    "text": "Lecture 11 slides"
+  },
+  {
+    "objectID": "notes/11-control-2-operational-space-control.html#key-ideas",
+    "href": "notes/11-control-2-operational-space-control.html#key-ideas",
+    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nOperational-space control directly regulates end-effector motion/force.\nJacobians map between joint space and task space.\nRedundant robots can execute secondary objectives in null space."
+  },
+  {
+    "objectID": "notes/11-control-2-operational-space-control.html#core-relation",
+    "href": "notes/11-control-2-operational-space-control.html#core-relation",
+    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
+    "section": "3 Core relation",
+    "text": "3 Core relation\n[ = J(q), = J^T F + N(q)_{null} ]"
+  },
+  {
+    "objectID": "notes/11-control-2-operational-space-control.html#review-questions",
+    "href": "notes/11-control-2-operational-space-control.html#review-questions",
+    "title": "Lecture 11 Notes: Control II - Operational-Space Control",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhy is task-space control useful for manipulation tasks?\nWhat is null-space motion and when is it beneficial?\nHow do joint limits change operational-space design?"
+  },
+  {
+    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html",
+    "href": "notes/13-perception-1-sensors-noise-state-estimation.html",
+    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "",
+    "text": "Lecture 13 slides"
+  },
+  {
+    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#lecture-slide",
+    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#lecture-slide",
+    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "",
+    "text": "Lecture 13 slides"
+  },
+  {
+    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#key-ideas",
+    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#key-ideas",
+    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nSensors provide indirect, noisy measurements of robot/environment state.\nEstimation combines models and measurements to infer latent state.\nUncertainty tracking is essential for robust decisions."
+  },
+  {
+    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#estimation-view",
+    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#estimation-view",
+    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "3 Estimation view",
+    "text": "3 Estimation view\n[ x_k = f(x_{k-1}, u_{k-1}) + w_k, z_k = h(x_k) + v_k ]\nwhere (w_k) and (v_k) represent process and measurement noise."
+  },
+  {
+    "objectID": "notes/13-perception-1-sensors-noise-state-estimation.html#review-questions",
+    "href": "notes/13-perception-1-sensors-noise-state-estimation.html#review-questions",
+    "title": "Lecture 13 Notes: Perception I - Sensors, Measurements, Noise, and State Estimation",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhy is sensor fusion often better than a single sensor?\nHow does measurement noise propagate to state uncertainty?\nWhat assumptions are needed for Kalman-style filtering?"
+  },
+  {
+    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html",
+    "href": "notes/15-perception-3-registration-object-pose-estimation.html",
+    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
+    "section": "",
+    "text": "Lecture 15 slides"
+  },
+  {
+    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#lecture-slide",
+    "href": "notes/15-perception-3-registration-object-pose-estimation.html#lecture-slide",
+    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
+    "section": "",
+    "text": "Lecture 15 slides"
+  },
+  {
+    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#key-ideas",
+    "href": "notes/15-perception-3-registration-object-pose-estimation.html#key-ideas",
+    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
+    "section": "2 Key ideas",
+    "text": "2 Key ideas\n\nModern robot perception combines geometric methods with learned representations.\nMultimodal inputs (RGB, depth, language, force) improve task-level understanding.\nRobustness to domain shift and uncertainty is essential for deployment."
+  },
+  {
+    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#common-workflow",
+    "href": "notes/15-perception-3-registration-object-pose-estimation.html#common-workflow",
+    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
+    "section": "3 Common workflow",
+    "text": "3 Common workflow\n\nBuild scene representation from multimodal sensor streams.\nRun detection/segmentation/tracking with learned or hybrid models.\nEstimate uncertainty and hand off structured outputs to planning/control."
+  },
+  {
+    "objectID": "notes/15-perception-3-registration-object-pose-estimation.html#review-questions",
+    "href": "notes/15-perception-3-registration-object-pose-estimation.html#review-questions",
+    "title": "Lecture 15 Notes: Perception III - Modern Robot Perception",
+    "section": "4 Review questions",
+    "text": "4 Review questions\n\nWhat benefits does multimodal sensing provide over RGB-only perception?\nWhy is uncertainty estimation important in robot decision pipelines?\nHow can domain adaptation reduce performance drop in new environments?"
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
     "title": "Lecture Notes",
     "section": "",
-    "text": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems"
-  },
-  {
-    "objectID": "notes/index.html#robot-modeling",
-    "href": "notes/index.html#robot-modeling",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Lecture 02: Robot Modeling I - Rigid Body Motions Lecture 03: Robot Modeling II - Forward Kinematics 4. Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics 5. Lecture 05: Robot Modeling IV - Dynamics of Open Chains 6. Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics"
-  },
-  {
-    "objectID": "notes/index.html#actuation",
-    "href": "notes/index.html#actuation",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation\nLecture 08: Actuation II - Actuator Dynamics and Low-Level Control"
-  },
-  {
-    "objectID": "notes/index.html#planning-and-control",
-    "href": "notes/index.html#planning-and-control",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Lecture 09: Planning - Trajectory Generation and Motion Planning\nLecture 10: Control I - Computed Torque Control\nLecture 11: Control II - Operational-Space Control\nLecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control"
-  },
-  {
-    "objectID": "notes/index.html#perception",
-    "href": "notes/index.html#perception",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation\nLecture 14: Perception II - Camera Modeling and Calibration"
-  },
-  {
-    "objectID": "notes/index.html#introduction-to-learning-based-robot-control",
-    "href": "notes/index.html#introduction-to-learning-based-robot-control",
-    "title": "Lecture Notes",
-    "section": "",
-    "text": "Lecture 15: A Brief Introduction to Robot Learning"
+    "text": "Introduction\nLecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\n\n\nRobot Modeling\nLecture 02: Robot Modeling I - Rigid Body Motions Lecture 03: Robot Modeling II - Forward Kinematics Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics Lecture 05: Robot Modeling IV - Dynamics of Open Chains Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\n\n\nActuation\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control\n\n\nPlanning and Control\nLecture 09: Planning and Control I - Trajectory Generation and Computed Torque Control Lecture 10: Planning II - Motion Planning Lecture 11: Control II - Operational-Space Control Lecture 12: Reactive Control - Potential Field and Velocity Field Control\n\n\nPerception\nLecture 13: Perception I - Sensors, Measurements, and Noise Lecture 14: Perception II - Camera Modeling and Calibration Lecture 15: Perception III - Object Pose Estimation\n\n\nIntegration\nLecture 16: Integrated Robotic Systems"
   }
 ]

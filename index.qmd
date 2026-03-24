@@ -8,6 +8,20 @@ subtitle: "Temporary Demo Course Website"
 Robotics combines mechanics, electronics, and computation to build autonomous physical systems.
 This course introduces the core ideas behind modeling, simulation, planning, control, and perception.
 
+By the end of this course, you will be able to:
+
+- Understand **the fundamentals of robot simulation** (_Left_: MuJoCo, _Right_: IsaacLab)
+
+  ![](videos/home/mujoco_example.mp4){fig-alt="MuJoCo simulation example" width="45%"}
+  ![](videos/home/isaac_lab_example.mp4){fig-alt="IsaacLab simulation example" width="45%"}
+
+- Understand **a complete perception-to-action pipeline**, providing the foundation to build real-world robotic systems later
+
+  ![](videos/home/pointing_sim.mp4){fig-alt="Pointing (Sim)" width="45%"}
+  ![](videos/home/pointing_real_world.mp4){fig-alt="Pointing (Real World)" width="45%"}<br>
+  ![](videos/home/potential_field.mp4){fig-alt="Potentil Field" width="32.4%"}
+  ![](videos/home/grasping.mp4){fig-alt="Grasping" width="57.6%"}
+
 ## Course Information
 
 - **Instructor:** Yonghyeon Lee

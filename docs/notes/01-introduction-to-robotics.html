@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems – Introduction to Robotics</title>
+<title>Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems – Introduction to Robotics</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b19dc19f624143b77be01a0762b60015.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4b33d23eec67e40f8e5e8d35937b59d6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,10 +93,6 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../notes/index.html"> 
 <span class="menu-text">Lecture Notes</span></a>
   </li>  
@@ -116,12 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecture-slide" id="toc-lecture-slide" class="nav-link active" data-scroll-target="#lecture-slide"><span class="header-section-number">1</span> Lecture slide</a></li>
-  <li><a href="#why-robotics" id="toc-why-robotics" class="nav-link" data-scroll-target="#why-robotics"><span class="header-section-number">2</span> 1. Why robotics?</a></li>
-  <li><a href="#canonical-robot-architecture" id="toc-canonical-robot-architecture" class="nav-link" data-scroll-target="#canonical-robot-architecture"><span class="header-section-number">3</span> 2. Canonical robot architecture</a></li>
-  <li><a href="#mathematical-foundations-preview" id="toc-mathematical-foundations-preview" class="nav-link" data-scroll-target="#mathematical-foundations-preview"><span class="header-section-number">4</span> 3. Mathematical foundations (preview)</a></li>
-  <li><a href="#visualization-workflow" id="toc-visualization-workflow" class="nav-link" data-scroll-target="#visualization-workflow"><span class="header-section-number">5</span> 4. Visualization workflow</a></li>
-  <li><a href="#reading-checklist" id="toc-reading-checklist" class="nav-link" data-scroll-target="#reading-checklist"><span class="header-section-number">6</span> 5. Reading checklist</a></li>
+  <li><a href="#what-is-a-robot" id="toc-what-is-a-robot" class="nav-link active" data-scroll-target="#what-is-a-robot"><span class="header-section-number">1</span> What is a Robot?</a></li>
   </ul>
 </nav>
     </div>
@@ -130,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems</h1>
+<h1 class="title">Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems</h1>
 </div>
 
 
@@ -147,57 +138,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lecture-slide" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="lecture-slide"><span class="header-section-number">1</span> Lecture slide</h2>
-<ul>
-<li><a href="../slides/01-introduction-to-robotics.html">Lecture 01 slides</a></li>
-</ul>
-</section>
-<section id="why-robotics" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="why-robotics"><span class="header-section-number">2</span> 1. Why robotics?</h2>
-<p>Robotics integrates mechanics, electronics, and computation to build embodied intelligent systems.</p>
-<p>Key motivations:</p>
-<ul>
-<li>Safer operation in hazardous environments</li>
-<li>Improved precision and repeatability</li>
-<li>Scalable automation in logistics, healthcare, and manufacturing</li>
-</ul>
-</section>
-<section id="canonical-robot-architecture" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="canonical-robot-architecture"><span class="header-section-number">3</span> 2. Canonical robot architecture</h2>
-<p>A practical robot often includes:</p>
-<ul>
-<li><strong>Plant</strong>: links, joints, motors, and transmission</li>
-<li><strong>Sensors</strong>: encoders, IMU, camera, LiDAR, force sensors</li>
-<li><strong>Compute stack</strong>: estimation, planning, and control modules</li>
-<li><strong>Communication layer</strong>: middleware for real-time data flow</li>
-</ul>
-</section>
-<section id="mathematical-foundations-preview" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="mathematical-foundations-preview"><span class="header-section-number">4</span> 3. Mathematical foundations (preview)</h2>
-<p>For a manipulator with joint configuration (q):</p>
-<ul>
-<li>Forward kinematics: (x = f(q))</li>
-<li>Differential kinematics: ( = J(q))</li>
-</ul>
-<p>These models connect commanded joint motion to end-effector behavior.</p>
-</section>
-<section id="visualization-workflow" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="visualization-workflow"><span class="header-section-number">5</span> 4. Visualization workflow</h2>
-<p>Each lecture keeps code in a dedicated subdirectory under <code>code/</code>.</p>
-<p>For lecture 01:</p>
-<ul>
-<li><a href="../code/lecture-01-introduction/README.md">Code directory README</a></li>
-<li><a href="../code/lecture-01-introduction/workspace_plot.py">Workspace plotting script</a></li>
-</ul>
-</section>
-<section id="reading-checklist" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="reading-checklist"><span class="header-section-number">6</span> 5. Reading checklist</h2>
-<ul>
-<li>Define robotics in one sentence.</li>
-<li>Explain the role of each block in the robot pipeline.</li>
-<li>State the difference between (f(q)) and (J(q)).</li>
-</ul>
+<section id="what-is-a-robot" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="what-is-a-robot"><span class="header-section-number">1</span> What is a Robot?</h2>
+<div class="callout callout-style-simple callout-definition no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="def-robot" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1 (Robot)</strong></span> <br> A robot is a physically embodied, programmable system that:<br> &nbsp;&nbsp;&nbsp;&nbsp; 1. acquires information from its environment through <strong>sensors</strong>,<br> &nbsp;&nbsp;&nbsp;&nbsp; 2. computes or plans desired actions, and<br> &nbsp;&nbsp;&nbsp;&nbsp; 3. executes those actions through <strong>actuators</strong><br> to achieve specified task objectives.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-definition no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div id="def-articulated-robot" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 2 (Articulated Robot)</strong></span> <br> An articulated robot is a robot composed of <strong>rigid links</strong> connected by <strong>joints</strong>.</p>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>

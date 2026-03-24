@@ -1,50 +1,20 @@
 ---
-title: "Lecture 01 Notes: Introduction - A Roadmap to Autonomous Robotic Systems"
+title: "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems"
 ---
 
-## Lecture slide
+## What is a Robot?
 
-- [Lecture 01 slides](../slides/01-introduction-to-robotics.qmd)
+::: {#def-robot name="Robot"}
+<br>
+A robot is a physically embodied, programmable system that:<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 1. acquires information from its environment through **sensors**,<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 2. computes or plans desired actions, and<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 3. executes those actions through **actuators**<br> 
+to achieve specified task objectives.
 
-## 1. Why robotics?
+:::
 
-Robotics integrates mechanics, electronics, and computation to build embodied intelligent systems.
-
-Key motivations:
-
-- Safer operation in hazardous environments
-- Improved precision and repeatability
-- Scalable automation in logistics, healthcare, and manufacturing
-
-## 2. Canonical robot architecture
-
-A practical robot often includes:
-
-- **Plant**: links, joints, motors, and transmission
-- **Sensors**: encoders, IMU, camera, LiDAR, force sensors
-- **Compute stack**: estimation, planning, and control modules
-- **Communication layer**: middleware for real-time data flow
-
-## 3. Mathematical foundations (preview)
-
-For a manipulator with joint configuration \(q\):
-
-- Forward kinematics: \(x = f(q)\)
-- Differential kinematics: \(\dot{x} = J(q)\dot{q}\)
-
-These models connect commanded joint motion to end-effector behavior.
-
-## 4. Visualization workflow
-
-Each lecture keeps code in a dedicated subdirectory under `code/`.
-
-For lecture 01:
-
-- [Code directory README](../code/lecture-01-introduction/README.md)
-- [Workspace plotting script](../code/lecture-01-introduction/workspace_plot.py)
-
-## 5. Reading checklist
-
-- Define robotics in one sentence.
-- Explain the role of each block in the robot pipeline.
-- State the difference between \(f(q)\) and \(J(q)\dot{q}\).
+::: {#def-articulated-robot name="Articulated Robot"}
+<br>
+An articulated robot is a robot composed of **rigid links** connected by **joints**.
+:::

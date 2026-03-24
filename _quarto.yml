@@ -20,8 +20,8 @@ website:
   title: "Introduction to Robotics"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      # - href: index.qmd
+      #   text: Home
       # - href: slides/index.qmd
       #   text: Lecture Slides
       - href: notes/index.qmd
@@ -38,11 +38,43 @@ format:
       light:
         - cosmo
         - styles/mit-website.scss
+    filters:
+      - callouty-theorem
     toc: true
     toc-depth: 3
     smooth-scroll: true
     code-copy: true
     anchor-sections: true
 
+callouty-theorem:
+  def:
+    override-title: false
+    callout:
+      type: definition
+      appearance: minimal
+      collapse: false
+      icon: false
+  thm:
+    override-title: false
+    callout:
+      type: theorem
+      appearance: minimal
+      collapse: false
+      icon: false
+  proof:
+    override-title: false
+    callout:
+      type: note
+      appearance: minimal
+      collapse: false
+      icon: false
+  exm:
+    override-title: false
+    callout:
+      type: example
+      appearance: minimal
+      collapse: false
+      icon: false
+      
 execute:
   freeze: auto

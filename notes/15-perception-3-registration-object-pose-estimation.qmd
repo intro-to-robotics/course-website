@@ -4,7 +4,7 @@ title: "Lecture 15 Notes: Perception III - Modern Robot Perception"
 
 ## Lecture slide
 
-- [Lecture 15 slides](../slides/15-real-world-robot-control.qmd)
+- [Lecture 15 slides](../slides/16-integrated-robotic-systems.qmd)
 
 ## Key ideas
 

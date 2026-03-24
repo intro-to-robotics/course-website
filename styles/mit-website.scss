@@ -52,9 +52,37 @@ pre code {
   color: inherit;
 }
 
-.callout.callout-style-default > .callout-header {
+.callout.callout-style-default>.callout-header {
   background: rgba(163, 31, 52, 0.08);
   border-bottom: 1px solid rgba(163, 31, 52, 0.15);
+}
+
+.theorem ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  padding-left: 1.4rem;
+}
+
+.theorem ol li {
+  margin-bottom: 0;
+}
+
+.theorem ol li+li {
+  margin-top: 0;
+}
+
+.definition ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  padding-left: 1.4rem;
+}
+
+.definition ol li {
+  margin-bottom: 0;
+}
+
+.definition ol li+li {
+  margin-top: 0;
 }
 
 .page-footer {
