@@ -3,4 +3,37 @@ title: "Introduction to Robotics"
 subtitle: "Temporary Demo Course Website"
 ---
 
-WRITE: WHAT SUMMARY 
+## Overview
+
+Robotics combines mechanics, electronics, and computation to build autonomous physical systems.
+This course introduces the core ideas behind modeling, simulation, planning, control, and perception.
+
+## Course Information
+
+- **Instructor:** Yonghyeon Lee
+- **Time:** TBA
+- **Location:** TBA
+- **Credits:** TBA
+- **Office Hours:** TBA
+
+## Prerequisites
+
+- Dynamics
+
+## Grading
+
+- Homework: TBA
+- Midterm exam: TBA
+- Final project/exam: TBA
+- Participation: TBA
+
+## Schedule
+
+This schedule is preliminary and may change during the semester.
+
+## Textbook
+
+- TBA
+
+## Resources
+- [Lecture Notes](notes/index.qmd)

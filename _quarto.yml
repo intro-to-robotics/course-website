@@ -22,12 +22,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: slides/index.qmd
-        text: Lecture Slides
+      # - href: slides/index.qmd
+      #   text: Lecture Slides
       - href: notes/index.qmd
         text: Lecture Notes
-      - href: code/index.qmd
-        text: Visualization Code
+      # - href: code/index.qmd
+      #   text: Visualization Code
   page-footer:
     left: "Introduction to Robotics"
     right: "Built with [Quarto](https://quarto.org)"

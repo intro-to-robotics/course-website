@@ -102,7 +102,7 @@
     "href": "index.html",
     "title": "Introduction to Robotics",
     "section": "",
-    "text": "WRITE: WHAT SUMMARY"
+    "text": "Robotics combines mechanics, electronics, and computation to build autonomous physical systems. This course introduces the core ideas behind modeling, simulation, planning, control, and perception."
   },
   {
     "objectID": "index.html#course-structure",
@@ -137,14 +137,14 @@
     "href": "notes/index.html",
     "title": "Lecture Notes",
     "section": "",
-    "text": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\n\n\n\n\n\nLecture 02: Robot Modeling I - Rigid Body Motions\nLecture 03: Robot Modeling II - Forward Kinematics\nLecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics\nLecture 05: Robot Modeling IV - Dynamics of Open Chains\nLecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\n\n\n\n\n\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation\nLecture 08: Actuation II - Actuator Dynamics and Low-Level Control\n\n\n\n\n\nLecture 09: Planning - Trajectory Generation and Motion Planning\nLecture 10: Control I - Computed Torque Control\nLecture 11: Control II - Operational-Space Control\nLecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control\n\n\n\n\n\nLecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation\nLecture 14: Perception II - Camera Modeling and Calibration\n\n\n\n\n\nLecture 15: A Brief Introduction to Robot Learning"
+    "text": "Introduction\nLecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\n\n\nRobot Modeling\nLecture 02: Robot Modeling I - Rigid Body Motions Lecture 03: Robot Modeling II - Forward Kinematics Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics Lecture 05: Robot Modeling IV - Dynamics of Open Chains Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\n\n\nActuation\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control\n\n\nPlanning and Control\nLecture 09: Planning and Control I - Trajectory Generation and Computed Torque Control Lecture 10: Planning II - Motion Planning Lecture 11: Control II - Operational-Space Control Lecture 12: Reactive Control - Potential Field and Velocity Field Control\n\n\nPerception\nLecture 13: Perception I - Sensors, Measurements, and Noise Lecture 14: Perception II - Camera Modeling and Calibration Lecture 15: Perception III - Object Pose Estimation\n\n\nIntegration\nLecture 16: Integrated Robotic Systems"
   },
   {
     "objectID": "notes/index.html#lectures",
     "href": "notes/index.html#lectures",
     "title": "Lecture Notes",
     "section": "",
-    "text": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\n\n\n\n\n\nLecture 02: Robot Modeling I - Rigid Body Motions\nLecture 03: Robot Modeling II - Forward Kinematics\nLecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics\nLecture 05: Robot Modeling IV - Dynamics of Open Chains\nLecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\n\n\n\n\n\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation\nLecture 08: Actuation II - Actuator Dynamics and Low-Level Control\n\n\n\n\n\nLecture 09: Planning - Trajectory Generation and Motion Planning\nLecture 10: Control I - Computed Torque Control\nLecture 11: Control II - Operational-Space Control\nLecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control\n\n\n\n\n\nLecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation\nLecture 14: Perception II - Camera Modeling and Calibration\n\n\n\n\n\nLecture 15: A Brief Introduction to Robot Learning"
+    "text": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems\n\n\n\nLecture 02: Robot Modeling I - Rigid Body Motions Lecture 03: Robot Modeling II - Forward Kinematics Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics Lecture 05: Robot Modeling IV - Dynamics of Open Chains Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics\n\n\n\nLecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation Lecture 08: Actuation II - Actuator Dynamics and Low-Level Control\n\n\n\nLecture 09: Planning - Trajectory Generation and Motion Planning Lecture 10: Control I - Computed Torque Control Lecture 11: Control II - Operational-Space Control Lecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control\n\n\n\nLecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation Lecture 14: Perception II - Camera Modeling and Calibration\n\n\n\nLecture 15: A Brief Introduction to Robot Learning"
   },
   {
     "objectID": "notes/index.html#how-to-add-a-new-note",
@@ -877,35 +877,35 @@
   {
     "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html",
     "href": "notes/04-robot-modeling-1-rigid-body-motions.html",
-    "title": "Lecture 04 Notes: Robot Modeling I - Rigid Body Motions",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
     "section": "",
-    "text": "Lecture 04 slides"
+    "text": "Lecture slides"
   },
   {
     "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#lecture-slide",
     "href": "notes/04-robot-modeling-1-rigid-body-motions.html#lecture-slide",
-    "title": "Lecture 04 Notes: Robot Modeling I - Rigid Body Motions",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
     "section": "",
-    "text": "Lecture 04 slides"
+    "text": "Lecture 02 slides\n\nIn this chapter,"
   },
   {
     "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#key-ideas",
     "href": "notes/04-robot-modeling-1-rigid-body-motions.html#key-ideas",
-    "title": "Lecture 04 Notes: Robot Modeling I - Rigid Body Motions",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
     "section": "2 Key ideas",
     "text": "2 Key ideas\n\nRobot geometry is described using coordinate frames and rigid transforms.\nHomogeneous transforms unify rotation and translation into one matrix form.\nComposition order matters because matrix multiplication is not commutative."
   },
   {
     "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#core-representation",
     "href": "notes/04-robot-modeling-1-rigid-body-motions.html#core-representation",
-    "title": "Lecture 04 Notes: Robot Modeling I - Rigid Body Motions",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
     "section": "3 Core representation",
     "text": "3 Core representation\n[ T =\n\\[\\begin{bmatrix}\nR & p \\\\\n0 & 1\n\\end{bmatrix}\\]\n, R SO(3), ; T SE(3) ]"
   },
   {
     "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#review-questions",
     "href": "notes/04-robot-modeling-1-rigid-body-motions.html#review-questions",
-    "title": "Lecture 04 Notes: Robot Modeling I - Rigid Body Motions",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
     "section": "4 Review questions",
     "text": "4 Review questions\n\nWhy do we use homogeneous coordinates in robotics?\nWhat is the geometric meaning of (T_{ab} T_{bc})?\nHow do you compute (T^{-1}) efficiently from (R) and (p)?"
   },
@@ -1342,5 +1342,110 @@
     "title": "Lecture 15: A Brief Introduction to Learning-Based Robot Control",
     "section": "Deployment considerations",
     "text": "Deployment considerations\n\nData quality and coverage\nSafety constraints and fallback policies\nSim-to-real transfer and domain randomization"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Introduction to Robotics",
+    "section": "",
+    "text": "Robotics combines mechanics, electronics, and computation to build autonomous physical systems. This course introduces the core ideas behind modeling, simulation, planning, control, and perception."
+  },
+  {
+    "objectID": "index.html#course-information",
+    "href": "index.html#course-information",
+    "title": "Introduction to Robotics",
+    "section": "Course Information",
+    "text": "Course Information\n\nInstructor: Yonghyeon Lee\nTime: TBA\nLocation: TBA\nCredits: TBA\nOffice Hours: TBA"
+  },
+  {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "Introduction to Robotics",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nDynamics"
+  },
+  {
+    "objectID": "index.html#grading",
+    "href": "index.html#grading",
+    "title": "Introduction to Robotics",
+    "section": "Grading",
+    "text": "Grading\n\nHomework: TBA\nMidterm exam: TBA\nFinal project/exam: TBA\nParticipation: TBA"
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Introduction to Robotics",
+    "section": "Schedule",
+    "text": "Schedule\nThis schedule is preliminary and may change during the semester."
+  },
+  {
+    "objectID": "index.html#textbook",
+    "href": "index.html#textbook",
+    "title": "Introduction to Robotics",
+    "section": "Textbook",
+    "text": "Textbook\n\nTBA"
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Introduction to Robotics",
+    "section": "Resources",
+    "text": "Resources\n\nLecture Notes"
+  },
+  {
+    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#section",
+    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#section",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
+    "section": "2 ",
+    "text": "2"
+  },
+  {
+    "objectID": "notes/04-robot-modeling-1-rigid-body-motions.html#degrees-of-freedom-of-a-rigid-body",
+    "href": "notes/04-robot-modeling-1-rigid-body-motions.html#degrees-of-freedom-of-a-rigid-body",
+    "title": "Lecture 02 Notes: Robot Modeling I - Rigid Body Motions",
+    "section": "1 Degrees of Freedom of a Rigid Body",
+    "text": "1 Degrees of Freedom of a Rigid Body"
+  },
+  {
+    "objectID": "notes/index.html#introduction",
+    "href": "notes/index.html#introduction",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lecture 01: Introduction - A Roadmap to Autonomous Robotic Systems"
+  },
+  {
+    "objectID": "notes/index.html#robot-modeling",
+    "href": "notes/index.html#robot-modeling",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lecture 02: Robot Modeling I - Rigid Body Motions Lecture 03: Robot Modeling II - Forward Kinematics 4. Lecture 04: Robot Modeling III - Velocity Kinematics and Inverse Kinematics 5. Lecture 05: Robot Modeling IV - Dynamics of Open Chains 6. Lecture 06: Robot Simulation - Modern Physics Engines and Contact Dynamics"
+  },
+  {
+    "objectID": "notes/index.html#actuation",
+    "href": "notes/index.html#actuation",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lecture 07: Actuation I - Electric Motors, Transmissions, and Torque Generation\nLecture 08: Actuation II - Actuator Dynamics and Low-Level Control"
+  },
+  {
+    "objectID": "notes/index.html#planning-and-control",
+    "href": "notes/index.html#planning-and-control",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lecture 09: Planning - Trajectory Generation and Motion Planning\nLecture 10: Control I - Computed Torque Control\nLecture 11: Control II - Operational-Space Control\nLecture 12: Reactive Control - Potential Fields, Velocity Fields, and Model Predictive Control"
+  },
+  {
+    "objectID": "notes/index.html#perception",
+    "href": "notes/index.html#perception",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lecture 13: Perception I - Sensors, Measurements, Noise, and State Estimation\nLecture 14: Perception II - Camera Modeling and Calibration"
+  },
+  {
+    "objectID": "notes/index.html#introduction-to-learning-based-robot-control",
+    "href": "notes/index.html#introduction-to-learning-based-robot-control",
+    "title": "Lecture Notes",
+    "section": "",
+    "text": "Lecture 15: A Brief Introduction to Robot Learning"
   }
 ]

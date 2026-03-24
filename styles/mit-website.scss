@@ -36,6 +36,14 @@ a {
   text-decoration-thickness: 1.5px;
 }
 
+.lecture-list a {
+  text-decoration: none;
+}
+
+.lecture-list a:hover {
+  text-decoration: underline;
+}
+
 code {
   color: $mit-dark-red;
 }
